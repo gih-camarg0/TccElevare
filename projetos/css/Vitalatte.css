@@ -7,6 +7,9 @@
 }
 
 /* HEADER */
+.logo_header img{
+    width: 250px;
+}
 .header, .navigation_header{
     display: flex;
     flex-direction: row;
