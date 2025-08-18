@@ -1,0 +1,435 @@
+@import url(global.css);
+
+/* INICIO */
+.inicio{
+    background-color: #000f0c33;
+    padding: 0 9% 0 9%;
+    justify-content: space-between;
+    height: 500px;
+}
+.slogan{
+    font-size: 40px;
+    font-weight: bold;
+    color: var(--text-color);
+}
+.chamada{
+    padding: 3% 0 0 0;
+    font-size: 25px;
+    color: var(--text-color);
+}
+.sub-texto{
+    padding: 2% 0 0 0;
+    font-size: 20px;
+    color: var(--text-color);
+}
+.btn-txt{
+    padding: 4% 0 0 0;
+}
+.btn-inicio{
+    border-radius: 20px;
+    font-size: 20px;
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    font-weight: bold;
+    border: none;
+    padding: 15px 105px;
+    align-items: center;
+    cursor: pointer;
+}
+.text-sub-btn{
+    font-size: 18px;
+    padding: 1% 0 0 0;
+    color: var(--text-color);
+}
+
+/* DADOS DA EMPRESA */
+.dados {
+    background-color: #E9E9E9;
+    margin: 0 auto;
+    padding: 40px 20px;
+    text-align: center;
+}
+.dados_title{
+    color: var(--primary-color);
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+.grade-estatistica {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+.grade-certificado {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+.grid-e {
+    border: 1px solid var(--primary-color);
+    border-radius: 20px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0px 4px 6px rgba(0,0,0,0.05);
+    background-color: #FFFFFF;
+}
+.grid-c {
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+    height: 150px;
+    border-radius: 20px;
+    border: 1px solid var(--primary-color);
+    box-shadow: 0px 4px 6px rgba(0,0,0,0.05);
+}
+.grid-e .numero-e {
+    font-size: 2rem;
+    color: var(--primary-color);
+    margin: 0;
+    font-weight: bold;
+}
+.grid-e .text-e {
+    font-size: 1rem;
+    margin-top: 10px;
+}
+.icon-c {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+.grid-c .text-c {
+    font-size: 1rem;
+    margin-top: 5px;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+.dados-text {
+    margin-top: 20px;
+    font-size: 1rem;
+    margin-left: 225px;
+    margin-right: 225px;
+}
+.dados-text .text-dados {
+    margin-bottom: 15px;
+}
+.destaque-dados{
+    font-weight: bold;
+}
+
+
+/* NOSSOS PROJETOS */
+.projetos {
+  padding: 60px 20px;
+  background-color: var(--alternative-color);
+}
+.proj-text {
+  max-width: 1200px;
+  margin: 0 auto 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.text-esquerda {
+  flex: 1;
+  min-width: 300px;
+}
+.text-direita {
+  flex: 1;
+  min-width: 300px;
+  padding-top: 15px;
+}
+.proj-title {
+  font-size: 42px;
+  font-weight: 700;
+  color: var(--primary-color);
+  margin: 0;
+}
+.proj-desc {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #495057;
+}
+.proj-desc strong {
+  font-weight: bold;
+  color: #343a40;
+}
+.space-carrossel{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.carousel-container {
+  width: 85%;
+  overflow: hidden;
+  position: relative;
+}
+.carousel {
+  display: flex;
+  animation: scroll 25s linear infinite;
+  width: max-content;
+}
+.card-projet{
+  min-width: 150px;
+  margin: 0 10px;
+  border-radius: 15px;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  flex-shrink: 0;
+}
+.img-projet{
+  width: 100%;
+  height: 150px;
+  display: block;
+}
+.saiba-projet{
+  display: block;
+  text-align: center;
+  padding: 12px;
+  background: #eee;
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+.saiba-projet:hover {
+  background: #ccc;
+}
+@keyframes scroll {
+  0% { transform: translateX(0); }
+  20% { transform: translateX(0); }
+  25% { transform: translateX(-270px); }
+  45% { transform: translateX(-270px); }
+  50% { transform: translateX(-540px); }
+  70% { transform: translateX(-540px); }
+  75% { transform: translateX(-810px); }
+  95% { transform: translateX(-810px); }
+  100% { transform: translateX(0); } 
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .slide {
+    min-width: 80%;
+    height: 400px;
+  }
+  .carrossel {
+    padding: 0 40px;
+  }
+  .nav-btn {
+    width: 30px;
+    height: 50px;
+    font-size: 24px;
+  }
+}
+@media (max-width: 480px) {
+  .slide {
+    min-width: 90%;
+    height: 350px;
+  }
+  .nav-btn {
+    width: 25px;
+    height: 45px;
+    font-size: 20px;
+  }
+}
+/* NOSSO PROCESSO */
+.processos{
+    align-items: center;
+    background-color: var(--alternative-color);
+}
+.processos .card_proc{
+    background-color: #FFFFFF;
+    margin: 20px auto;
+    max-width: 1200px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-align: center;
+}
+.proc_title{
+    display: inline-block;
+    padding: 5px 15px;
+    border: 1px solid var(--primary-color);
+    border-radius: 20px;
+    font-size: 20px;
+    color: var(--primary-color);
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.proc_subtitle{
+    margin-top: 10px;
+    font-size: 20px;
+    position: relative;
+}
+.passos{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 1px;
+}
+.proc_text{
+    padding: 20px;
+    position: relative;
+}
+.img-proc{
+    margin-bottom: 10px;
+    width: 50px;
+    height: 50px;
+}
+.numero{
+    font-size: 60px;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+.numero-cor{
+    font-size: 60px;
+    font-weight: bold;
+    color: var(--secondary-color);
+}
+.text_title{
+    font-size: 20px;
+    margin-top: 10px;
+    color: var(--primary-color);
+    font-weight: bold;
+}
+.text_title-cor{
+    font-size: 20px;
+    margin-top: 10px;
+    color: var(--secondary-color);
+    font-weight: bold;
+}
+.proc-ul{
+    list-style: none;
+    padding: 0;
+    margin-top: 15px;
+}
+.proc-li{
+    font-size: 16px;
+    margin-bottom: 8px;
+    color: #000;
+}
+@media(max-width: 768px){
+    .passos{
+        flex-direction: column;
+    }
+}
+
+/* NOSSOS PARCEIROS */
+.parceiros{
+    background-color: #FFFFFF;
+    padding: 40px 10px;
+    text-align: center;
+    align-items: center; 
+}
+.parceiros_titulo {
+    font-size: 50px;
+    font-weight: bold;
+}
+.verificado {
+    color: var(--primary-color);
+}
+#verified {
+    display: inline-block;
+    margin-left: 5px;
+    color: var(--primary-color);
+    font-size: 40px;
+}
+.subtext{
+    max-width: 600px;
+    margin: 20px auto;
+    font-size: 20px;
+    line-height: 1.6;
+}
+.rolagem{
+    align-items: center;
+    white-space: nowrap;
+    overflow: hidden;
+    box-sizing: border-box;
+    margin-left: 150px;
+    margin-right: 150px;
+}
+.rolagem-content{
+    width: 50%;
+    display: inline-block;
+    padding-left: 100%;
+    animation: scroll-left 50s linear infinite;
+}
+.logo-rola{
+    display: inline-block;
+    width: 90px; 
+    height: 90px;
+    color: #fff;
+    letter-spacing: 50px;
+}
+@keyframes scroll-left {
+    0% {
+      transform: translateX(0%);
+    }
+    50% {
+      transform: translateX(-100%);
+    }
+}
+
+/* FORMULÃRIO */
+.formulario{
+    background-color: var(--alternative-color);
+    align-items: center;
+    text-align: center;
+}
+.formulario .title{
+    font-size: 50px;
+    color: var(--primary-color);
+    font-weight: bold;
+}
+.formulario p{
+    font-size: 20px;
+    color: var(--text-color);
+}
+.form{
+    max-width: 800px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.form input,textarea,select {
+    padding: 10px 14px;
+    border: 1px solid #64C0DF; 
+    background-color: #308ea633; 
+    border-radius: 999px;
+    outline: none;
+    font-size: 14px;
+    color: #696767;
+}
+.form textarea {
+    border-radius: 20px;
+    resize: vertical;
+    min-height: 60px;
+}
+::placeholder {
+    color: #696767;
+    font-size: 15px;
+}
+.btn_form{
+    border-radius: 20px;
+    color: white;
+    font-weight: bold;
+    background-color: var(--primary-color);
+    border: none;
+    font-size: 15px;
+    padding: 10px 13px;
+    align-items: center;
+    cursor: pointer;
+}
+.btn_form:hover{
+    background-color: var(--secondary-color);
+    color: white;
+    transition: 0.6s ease;
+}
