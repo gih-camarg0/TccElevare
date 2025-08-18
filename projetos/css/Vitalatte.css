@@ -65,30 +65,33 @@
 /*SECTION INITIAL*/
 .initial{
     background-color: #567C8D;
-    padding: 0 9% 0 9%;
+    padding: 0 11%;
     justify-content: space-between;
-    height: 100vh;
+    height: 87vh;
+    color: white;
 }
 .type{
-    font-size: 40px;
-    font-weight: bold;
-    color: var(--text-color);
+    font-size: 20px;
+    border: 1px solid white;
+    border-radius: 50px;
+    padding: 2px 4px;
+    width: 200px;
+    text-align: center;
 }
 .name{
-    padding: 3% 0 0 0;
-    font-size: 25px;
-    color: var(--text-color);
+    font-size: 100px;
+    font-weight: bold;
+
 }
 .conheca-link{
-    padding: 2% 0 0 0;
     font-size: 20px;
-    color: var(--text-color);
+    text-decoration: none;
+    color: white;
+
 }
-.segmento{
-    padding: 2% 0 0 0;
-    font-size: 20px;
-    color: var(--text-color);
-}
+
+/*SECTION SOBRE*/
+
 
 /* FOOTER */
 #copyright{
