@@ -157,13 +157,13 @@
     font-weight: bold;
 }
 .contact-left{
-    flex: 1;
-    margin: auto 11%;
+    flex: 2;
+    margin: 0 0 0 auto;
 }
 .contact-desc{
     font-size: 20px;
     margin-bottom: 20px;
-    width: 400px;
+    width: 600px;
 }
 .btn-contact{
     background-color: #567C8D;
