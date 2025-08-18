@@ -92,14 +92,16 @@
 
 /*SECTION SOBRE*/
 .sobre{
-    background-color: white;
-    padding: 0 11%;
+    margin: auto 11%;
+    background-color: #F5F5F5;
     justify-content: space-between;
     height: 87vh;
     color: black;
+    display: flex;
+    align-items: flex-start;
 }
 .right-sobre{
-
+    flex: 1;
 }
 .type-sobre{
     font-size: 20px;
@@ -118,10 +120,12 @@
     text-decoration: none;
 }
 .left-sobre{
-
+    flex: 2;
 }
 .text-sobre{
     font-size: 20px;
+    width: 600px;
+    margin: 0 0 0 auto;
 }
 
 /* FOOTER */
