@@ -91,6 +91,13 @@
 }
 
 /*SECTION SOBRE*/
+.sobre{
+    background-color: white;
+    padding: 0 11%;
+    justify-content: space-between;
+    height: 87vh;
+    color: black;
+}
 .type-sobre{
     font-size: 20px;
     border: 1px solid black;
@@ -107,8 +114,10 @@
 .segmento{
     font-size: 20px;
     text-decoration: none;
-    color: black;
+}
 
+.text-sobre{
+    font-size: 20px;
 }
 
 /* FOOTER */
