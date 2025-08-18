@@ -136,6 +136,45 @@
     width: 600px;
 }
 
+/*SECTION ENTRE CONTATO*/
+.contact{
+    background-color: #F5F5F5;
+    justify-content: space-between;
+    min-height: 40vh;
+    color: black;
+    display: flex;
+    align-items: center;
+}
+.contact-right{
+    flex: 1;
+    margin: auto 11%;
+}
+.contact-subtitle{
+    font-size: 20px;
+}
+.contact-title{
+    font-size: 50px;
+    font-weight: bold;
+}
+.contact-left{
+    flex: 1;
+    margin: auto 11%;
+}
+.contact-desc{
+    font-size: 20px;
+    margin-bottom: 20px;
+    width: 400px;
+}
+.btn-contact{
+    background-color: #567C8D;
+    color: white;
+    padding: 14px 28px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
 /* FOOTER */
 #copyright{
     display: flex;
