@@ -74,9 +74,10 @@
 #copyright{
     display: flex;
     justify-content: center;
-    background-image: url(../img/nuvem.png);
+    background-color: var(--alternative-color);
     font-size: 20px;
     padding: 25px;
     font-weight: 500;
+    border-top: 1px solid var(--secondary-color);
     color: var(--text-color);
 }
