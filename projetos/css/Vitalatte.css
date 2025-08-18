@@ -64,11 +64,16 @@
 
 /*SECTION INITIAL*/
 .initial{
+    display: flex;
     background-color: #567C8D;
-    padding: 0 11%;
     justify-content: space-between;
-    height: 87vh;
+    min-height: 87vh;
     color: white;
+    align-items: center;
+}
+.right-initial{
+    flex: 1;
+    margin: auto 11%;
 }
 .type{
     font-size: 20px;
@@ -89,19 +94,22 @@
     color: white;
 
 }
+.left-initial{
+    flex: 1;
+}
 
 /*SECTION SOBRE*/
 .sobre{
-    margin: auto 11%;
     background-color: #F5F5F5;
     justify-content: space-between;
-    height: 87vh;
+    min-height: 87vh;
     color: black;
     display: flex;
-    align-items: flex-start;
+    align-items: center;
 }
 .right-sobre{
     flex: 1;
+    margin: auto 11%;
 }
 .type-sobre{
     font-size: 20px;
@@ -121,11 +129,11 @@
 }
 .left-sobre{
     flex: 2;
+    margin: 0 0 0 auto;
 }
 .text-sobre{
     font-size: 20px;
     width: 600px;
-    margin: 0 0 0 auto;
 }
 
 /* FOOTER */
