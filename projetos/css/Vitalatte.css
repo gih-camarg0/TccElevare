@@ -91,7 +91,25 @@
 }
 
 /*SECTION SOBRE*/
+.type-sobre{
+    font-size: 20px;
+    border: 1px solid black;
+    border-radius: 50px;
+    padding: 2px 4px;
+    width: 200px;
+    text-align: center;
+}
+.name-sobre{
+    font-size: 100px;
+    font-weight: bold;
 
+}
+.segmento{
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+
+}
 
 /* FOOTER */
 #copyright{
