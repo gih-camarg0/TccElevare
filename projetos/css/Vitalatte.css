@@ -98,6 +98,9 @@
     height: 87vh;
     color: black;
 }
+.right-sobre{
+
+}
 .type-sobre{
     font-size: 20px;
     border: 1px solid black;
@@ -109,13 +112,14 @@
 .name-sobre{
     font-size: 100px;
     font-weight: bold;
-
 }
 .segmento{
     font-size: 20px;
     text-decoration: none;
 }
+.left-sobre{
 
+}
 .text-sobre{
     font-size: 20px;
 }
@@ -124,9 +128,8 @@
 #copyright{
     display: flex;
     justify-content: center;
-    background-image: url(../img/nuvem.png);
+    background-color: #567C8D;
     font-size: 20px;
     padding: 25px;
-    font-weight: 500;
-    color: var(--text-color);
+    color: white;
 }
