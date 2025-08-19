@@ -61,6 +61,46 @@
     to {margin-left: -10vw;}
 }
 
+/*SECTION INITIAL*/
+.initial{
+    display: flex;
+    background-color: #71557A;
+    justify-content: space-between;
+    min-height: 87vh;
+    color: white;
+    align-items: center;
+}
+.right-initial{
+    flex: 1;
+    margin: auto 11%;
+}
+.type{
+    font-size: 20px;
+    border: 1px solid white;
+    border-radius: 50px;
+    padding: 2px 4px;
+    width: 200px;
+    text-align: center;
+}
+.name{
+    font-size: 100px;
+    font-weight: bold;
+
+}
+.conheca-link{
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+
+}
+.conheca-link:hover{
+    color: #D183A9;
+    transition: 0.5s;
+}
+.left-initial{
+    flex: 1;
+}
+
 /* FOOTER */
 #copyright{
     display: flex;
