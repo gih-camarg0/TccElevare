@@ -136,6 +136,38 @@
     width: 600px;
 }
 
+/*SECTION PALETTE*/
+.palette{
+    background-color: red;
+    min-height: 87vh;
+    color: black;
+}
+.text-palette{
+    color: #ffffffb3;
+    margin: auto 11%;
+    font-size: 20px;
+}
+.cerceta{
+    background-color: #567C8D;
+    height: 29vh;
+    display: flex;
+    align-items: center; 
+}
+.bege{
+    background-color: #F5EFEB;
+    height: 14.5vh;
+}
+.ceu{
+    background-color: #C8D9E6;
+    height: 14.5vh;
+}
+.marinho{
+    background-color: #2F4156;
+    height: 29vh;
+    display: flex;
+    align-items: center; 
+}
+
 /*SECTION ENTRE CONTATO*/
 .contact{
     background-color: #F5F5F5;
