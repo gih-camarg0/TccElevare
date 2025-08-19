@@ -95,6 +95,7 @@
 }
 .conheca-link:hover{
     color: #C8D9E6;
+    transition: 0.5s;
 }
 .left-initial{
     flex: 1;
