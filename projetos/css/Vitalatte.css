@@ -46,7 +46,7 @@
         position: absolute;
         flex-direction: column !important;
         top: 0;
-        background: var(--alternative-color);
+        background: #C8D9E6;
         height: 100%;
         width: 35vw;
         padding: 1em;
