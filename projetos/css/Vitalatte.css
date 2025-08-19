@@ -92,7 +92,9 @@
     font-size: 20px;
     text-decoration: none;
     color: white;
-
+}
+.conheca-link:hover{
+    color: #C8D9E6;
 }
 .left-initial{
     flex: 1;
