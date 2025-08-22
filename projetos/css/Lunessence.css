@@ -101,6 +101,38 @@
     flex: 1;
 }
 
+/*SECTION PALETTE*/
+.palette{
+    background-color: red;
+    min-height: 87vh;
+    color: black;
+}
+.text-palette{
+    color: #ffffffb3;
+    margin: auto 11%;
+    font-size: 20px;
+}
+.old-lavander{
+    background-color: #71557A;
+    height: 29vh;
+    display: flex;
+    align-items: center; 
+}
+.middle-purple{
+    background-color: #D183A9;
+    height: 14.5vh;
+}
+.queen-pink{
+    background-color: #F3C8DD;
+    height: 14.5vh;
+}
+.brown-chocolate{
+    background-color: #4B1535;
+    height: 29vh;
+    display: flex;
+    align-items: center; 
+}
+
 /*SECTION ENTRE CONTATO*/
 .contact{
     background-color: #F5F5F5;
