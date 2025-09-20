@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro Elevare</title>
+
+    <link rel="stylesheet" href="cadastro.css">
+</head>
+<body>
+    <div class="container" id="container">
+
+        <!---->
+        <div class="form-container  pes-fis">
+            <form>
+                <p class="title">Cadastro pessoa física</p>
+                <input type="text" placeholder="Nome completo">
+                <input type="text" placeholder="CPF">
+                <input type="text" placeholder="Grau de escolaridade">
+                <input type="text" placeholder="Telefone">
+                <input type="email" placeholder="Email">
+                <input type="text" placeholder="Formação profissional">
+                <button>Cadastrar</button>
+            </form>
+        </div>
+
+        <div class="form-container empresa">
+            <form>
+                <p class="title">Cadastro empresas</p>
+                <input type="text" placeholder="Nome da empresa">
+                <input type="text" placeholder="Segmento da empresa">
+                <input type="text" placeholder="Localização">
+                <input type="text" placeholder="CNPJ">
+                <input type="text" placeholder="Site / rede oficial">
+                <input type="email" placeholder="Email">
+                <input type="text" placeholder="Telefone">
+                <button>Cadastrar</button>
+            </form>
+        </div>
+
+        <div class="toggle-container">
+            <div class="toggle">
+                <div class="toggle-panel toggle-left">
+                    <h1>Seja bem-vindo!!</h1>
+                    <p>Caso você queira cadastrar uma pessoa física clique no botão abaixo</p>
+                    <button class="hidden" id="login">Pessoa Física</button>
+                </div>
+                <div class="toggle-panel toggle-right">
+                    <h1>Seja bem-vindo!!</h1>
+                    <p>Caso você queira cadastrar uma empresa clique no botão abaixo</p>
+                    <button class="hidden" id="register">Empresas</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="cadastro.js"></script>
+</body>
+</html>
