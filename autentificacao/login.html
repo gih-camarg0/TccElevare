@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro Elevare</title>
+
+    <link rel="stylesheet" href="autentica.css">
+</head>
+<body>
+    <div class="container" id="container">
+
+        <!---->
+        <div class="form-container  pes-fis">
+            <form>
+                <p class="title">Login pessoa física</p>
+                <input type="email" placeholder="Email">
+                <input type="password" placeholder="Senha de acesso">
+                <button>Acessar</button>
+            </form>
+        </div>
+
+        <div class="form-container empresa">
+            <form>
+                <p class="title">Login empresas</p>
+                <input type="email" placeholder="Email">
+                <input type="password" placeholder="Senha de acesso">
+                <button>Acessar</button>
+            </form>
+        </div>
+
+        <div class="toggle-container">
+            <div class="toggle">
+                <div class="toggle-panel toggle-left">
+                    <h1>Bem-vindo de volta!!</h1>
+                    <p>Caso você queira acessa como uma pessoa física clique no botão abaixo</p>
+                    <button class="hidden" id="login">Pessoa Física</button>
+                </div>
+                <div class="toggle-panel toggle-right">
+                    <h1>Bem-vindo de volta!!</h1>
+                    <p>Caso você queira acessa como uma empresa clique no botão abaixo</p>
+                    <button class="hidden" id="register">Empresas</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="autentica.js"></script>
+</body>
+</html>
