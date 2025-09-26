@@ -10,7 +10,7 @@ pessoaBtn.addEventListener('click', () => {
     container.classList.remove("active");
 });
 
-/*Ver senha login*/
+/*Ver senha login-pessoa fisica*/
 let senhaV = document.querySelector('#verSenha')
 
 senhaV.addEventListener('click', ()=>{
@@ -23,11 +23,11 @@ senhaV.addEventListener('click', ()=>{
     }
 });
 
-/*Ver senha cadastro*/
+/*Ver senha login-empresas*/
 let senhaVer = document.querySelector('#SenhaVer')
 
 senhaVer.addEventListener('click', ()=>{
-    let inputSenha = document.querySelector('#senha')
+    let inputSenha = document.querySelector('#senhaEmp')
 
     if(inputSenha.getAttribute('type') == 'password'){
         inputSenha.setAttribute('type', 'text')
