@@ -76,7 +76,7 @@
 .inicio{
     padding: 0 9% 0 9%;
     justify-content: space-between;
-    height: 500px;
+    height: 90vh;
     background: url(../assets/backgroud-initial.jpg) no-repeat;
     background-size: cover;
     background-position: center;

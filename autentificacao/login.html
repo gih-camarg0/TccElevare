@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro Elevare</title>
+    <title>Login Elevare</title>
 
     <link rel="stylesheet" href="autentica.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <div class="container" id="container">
@@ -15,8 +16,11 @@
             <form>
                 <p class="title">Login pessoa física</p>
                 <input type="email" placeholder="Email">
-                <input type="password" placeholder="Senha de acesso">
-                <p class="p-cad">Ainda não possui uma conta?<a href="cadastro.html" class="link-cad"> Cadastre-se agora!!</a></p>
+                <div class="label-float">
+                    <input type="password" id="senha" placeholder="Senha de acesso">
+                    <i id="verSenha" class="fa fa-eye" aria-hidden="true"></i>
+                </div>
+                <p class="p-cad">Ainda não possui uma conta?<a href="cadastro.html" class="link-cad"> Cadastre-se agora!</a></p>
                 <button>Acessar</button>
             </form>
         </div>
@@ -25,8 +29,11 @@
             <form>
                 <p class="title">Login empresas</p>
                 <input type="email" placeholder="Email">
-                <input type="password" placeholder="Senha de acesso">
-                <p class="p-cad">Ainda não possui uma conta?<a href="cadastro.html" class="link-cad"> Cadastre-se agora!!</a></p>
+                <div class="label-float">
+                    <input type="password" id="senhaEmp" placeholder="Senha de acesso">
+                    <i id="SenhaVer" class="fa fa-eye" aria-hidden="true"></i>
+                </div>
+                <p class="p-cad">Ainda não possui uma conta?<a href="cadastro.html" class="link-cad"> Cadastre-se agora!</a></p>
                 <button>Acessar</button>
             </form>
         </div>

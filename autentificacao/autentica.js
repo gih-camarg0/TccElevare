@@ -9,3 +9,29 @@ empresaBtn.addEventListener('click', () => {
 pessoaBtn.addEventListener('click', () => {
     container.classList.remove("active");
 });
+
+/*Ver senha login-pessoa fisica*/
+let senhaV = document.querySelector('#verSenha')
+
+senhaV.addEventListener('click', ()=>{
+    let inputSenha = document.querySelector('#senha')
+
+    if(inputSenha.getAttribute('type') == 'password'){
+        inputSenha.setAttribute('type', 'text')
+    }else{
+        inputSenha.setAttribute('type', 'password')
+    }
+});
+
+/*Ver senha login-empresas*/
+let senhaVer = document.querySelector('#SenhaVer')
+
+senhaVer.addEventListener('click', ()=>{
+    let inputSenha = document.querySelector('#senhaEmp')
+
+    if(inputSenha.getAttribute('type') == 'password'){
+        inputSenha.setAttribute('type', 'text')
+    }else{
+        inputSenha.setAttribute('type', 'password')
+    }
+});

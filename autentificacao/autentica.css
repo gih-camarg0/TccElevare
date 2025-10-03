@@ -25,7 +25,7 @@ body{
 }
 
 .container{
-    background-color: #fff;
+    background-color: #eee;
     border-radius: 30px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
     position: relative;
@@ -72,11 +72,11 @@ body{
 
 .container button.hidden{
     background-color: transparent;
-    border-color: #fff;
+    border-color: #eee;
 }
 
 .container form{
-    background-color: #fff;
+    background-color: #eee;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -86,7 +86,7 @@ body{
 }
 
 .container input{
-    background-color: #eee;
+    background-color: #dbd9d9; 
     border: none;
     margin: 6px 0;
     padding: 8px 15px;
@@ -94,6 +94,21 @@ body{
     border-radius: 8px;
     width: 100%;
     outline: none;
+}
+
+.label-float{
+    border: none;
+    width: 100%;
+}
+
+.fa-eye{
+    position: absolute;
+    /* top: 15px;
+    right: 13px; */
+    top: 46%;
+    right: 13%;
+    cursor: pointer;
+    color: #8f8f8f;
 }
 
 .form-container{
