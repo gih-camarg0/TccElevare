@@ -70,6 +70,7 @@
 
 /* CONTENT */
 #geral_container{
+    height: 74vh;
     margin: 0 90px 20px;
 }
 
@@ -117,7 +118,7 @@
     gap: 12px;
     list-style: none;
     padding: 14px;
-    max-height: 400px;
+    max-height: 550px;
     overflow-y: auto;
 }
 
@@ -166,7 +167,7 @@
     display: flex;
     flex: 1;
     flex-direction: column;
-    max-height: 400px;
+    max-height: 480px;
     padding: 14px;
     overflow-y: auto;
 }

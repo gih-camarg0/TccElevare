@@ -71,6 +71,7 @@
 /*SECTION QUEM SOMOS? */
 .quem-somos{
     background-color: red;
+    height: 90vh;
 }
 
 /*SECTION CONHEÇA NOSSOS FUNDADORES */
@@ -78,6 +79,7 @@
   padding: 40px 20px;
   background-color: white;
   text-align: center;
+  height: 90vh;
 }
 
 .title-fundadores {
