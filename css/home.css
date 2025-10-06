@@ -81,6 +81,9 @@
     background-size: cover;
     background-position: center;
 }
+.text-init{
+    padding: 10% 0 0 0;
+}
 .slogan{
     font-size: 40px;
     font-weight: bold;
