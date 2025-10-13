@@ -125,14 +125,14 @@
 /* CONTAINER */
 #container{
     display: flex;
-    gap: 20px; /* espaço entre as divs */
+    gap: 20px; 
     padding: 20px;
 }
 
 /* VAGAS */
 .vagas{
     display: flex;
-    flex: 1; /* ocupa metade ou mais do espaço disponível */
+    flex: 1; 
     flex-direction: column;
     gap: 12px;
     list-style: none;
@@ -152,7 +152,7 @@
 .vaga-logo{
     width: 85px;
     height: 85px;
-    object-fit: cover; /*pra não peder a qualidade ao alterar a altura e largura das imagens*/
+    object-fit: cover; 
 }
 
 .vaga-content{
@@ -200,7 +200,7 @@
 .topo-logo{
     width: 85px;
     height: 85px;
-    object-fit: cover; /*pra não peder a qualidade ao alterar a altura e largura das imagens*/
+    object-fit: cover; 
 }
 
 .topo-title{
