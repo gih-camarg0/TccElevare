@@ -70,8 +70,47 @@
 
 /*SECTION QUEM SOMOS? */
 .quem-somos{
-    background-color: red;
+    padding: 0 20px;
+    text-align: center;
     height: 90vh;
+}
+
+.content-quem{
+    display: flex;
+    justify-content: center; /* centraliza horizontalmente */
+    padding: 40px;
+    gap: 20px;
+}
+
+.left-quem{
+  width: 50%; /* ajuste conforme o tamanho desejado */
+  height: 400px;
+  background-color: #1FB19B;
+  object-fit: cover;
+}
+
+.right-quem {
+  justify-content: center;
+  padding: 40px 50px;
+  width: 50%;
+  font-size: 1.2rem;
+}
+
+.title-quem {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.title-quem {
+    display: inline-block;
+    padding: 5px 15px;
+    border: 1px solid var(--alternative-color);
+    border-radius: 20px;
+    font-size: 20px;
+    color: var(---azul);
+    margin-bottom: 10px;
 }
 
 /*SECTION CONHEÇA NOSSOS FUNDADORES */
