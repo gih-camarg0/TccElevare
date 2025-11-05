@@ -97,19 +97,12 @@
 }
 
 .title-quem {
-  text-align: center;
-  font-size: 2rem;
-  font-weight: bold;
-  margin-bottom: 30px;
-}
-
-.title-quem {
     display: inline-block;
     padding: 5px 15px;
-    border: 1px solid var(--alternative-color);
-    border-radius: 20px;
-    font-size: 20px;
-    color: var(---azul);
+    border: 1px solid var(--primary-color);
+    border-radius: 30px;
+    font-size: 1.7rem;
+    color: var(--primary-color);
     margin-bottom: 10px;
 }
 
@@ -124,10 +117,10 @@
 .title-fundadores {
     display: inline-block;
     padding: 5px 15px;
-    border: 1px solid var(--alternative-color);
-    border-radius: 20px;
-    font-size: 20px;
-    color: var(---azul);
+    border: 1px solid var(--primary-color);
+    border-radius: 30px;
+    font-size: 1.7rem;
+    color: var(--primary-color);
     margin-bottom: 10px;
 }
 
@@ -202,8 +195,35 @@
 
 /*SECTION NOSSOS VALORES */
 .valores{
-    background-color: blue;
+    padding: 40px 20px;
+    text-align: center;
 }
+
+.title-valores {
+    display: inline-block;
+    padding: 5px 15px;
+    border: 1px solid var(--primary-color);
+    border-radius: 30px;
+    font-size: 1.7rem;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+.lista-valores {
+  list-style-position: inside;
+  text-align: left;
+  font-size: 1.5rem;
+  padding: 40px 80px;
+}
+
+.lista-valores li {
+  padding: 15px 25px;
+}
+
+.lista-valores li:nth-child(1) { background-color:var(--primary-color); }
+.lista-valores li:nth-child(2) { background-color:var(--secondary-color); }
+.lista-valores li:nth-child(3) { background-color:var(--primary-color); }
+.lista-valores li:nth-child(4) { background-color:var(--secondary-color); }
 
 /*SECTION POR QUE ESCOLHER A ELEVARE */
 .pq-escolher{
