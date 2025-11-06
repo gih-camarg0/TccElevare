@@ -8,7 +8,7 @@
     
     <link rel="shortcut icon" type="imagex/png" href="assets/logotipo.png">
 
-    <link rel="stylesheet" href="css/empresas.css">
+    <link rel="stylesheet" href="css/addvaga.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
@@ -33,268 +33,60 @@
     </header>
 
     <div id="geral_container">
-        <div class="initial-icons">
-            <div class="search">
-                <i class="fa-solid fa-magnifying-glass"></i>
-                <input type="text" id="input_field" class="input-field" placeholder="Pesquisar">
-            </div>
-
-            <button class="add-vaga">
-                <a href="addvaga.html" target="_blank">Adicionar vaga</a>
-            </button>
-    
+        <div class="initial-icons">    
             <button class="btn-ajuda">
                 <a href="ajuda.html" target="_blank"><i class="fa-solid fa-question"></i></a>
             </button>
         </div>
 
-        <div id="container">
-            <div class="lista-vagas">
-                <ul class="vagas">
-                    <li class="vaga">
-                        <img class="vaga-logo" src="projetos/logos/Vitalatte.jpg" alt="logo da empresa">
-                        <div class="vaga-content">
-                            <p data-content="content1" class="vaga-title">Atendente | São Paulo - SP</p>
-                            <p class="vaga-contratante">Krónes</p>
-                            <p class="vaga-tempo">Há 10 horas.</p>
-                        </div>
-                    </li>
-
-                    <li class="vaga">
-                        <img class="vaga-logo" src="projetos/logos/Lunessence.jpg" alt="logo da empresa">
-                        <div class="vaga-content">
-                            <p data-content="content2" class="vaga-title">Auxiliar de serviços gerais | São José dos Campos - SP</p>
-                            <p class="vaga-contratante">Almendra</p>
-                            <p class="vaga-tempo">Há 15 horas.</p>
-                        </div>
-                    </li>
-
-                    <li class="vaga">
-                        <img class="vaga-logo" src="projetos/logos/Vitalatte.jpg" alt="logo da empresa">
-                        <div class="vaga-content">
-                            <p data-content="content3" class="vaga-title">Cabeleleira | Belo Horizonte - MG</p>
-                            <p class="vaga-contratante">Lunahair</p>
-                            <p class="vaga-tempo">Há 20 horas.</p>
-                        </div>
-                    </li>
-
-                    <li class="vaga">
-                        <img class="vaga-logo" src="projetos/logos/Lunessence.jpg" alt="logo da empresa">
-                        <div class="vaga-content">
-                            <p data-content="content4" class="vaga-title">Atendente | Recife - PE</p>
-                            <p class="vaga-contratante">Oravita</p>
-                            <p class="vaga-tempo">Há 1 dia.</p>
-                        </div>
-                    </li>
-
-                    <li id="no_results">
-                        <p>Nenhum resultado encontrado</p>
-                    </li>
-                </ul>
+        <div class="content-form">
+        <p class="title-form">Preencha o formulário a respeito da vaga que sua empresa quer disponibilizar</p>
+        <form action="php/addvagas.php" method="POST">
+            <div class="empresa-funcao">
+                <input type="text" class="inp-funcao" name="funcao" placeholder="Função" required>
+                <input type="text" class="inp-empresa" name="emppresa" placeholder="Empresa contratante" required>
             </div>
-            
-            <div class="card-vagas">
-                <div id="content1" class="content">
-                    <div class="topo">
-                        <img class="topo-logo" src="projetos/logos/Vitalatte.jpg" alt="logo da empresa">
-                        <div class="topo-text">
-                            <p class="topo-title" >Atendente | São Paulo - SP</p>
-                            <p class="topo-contratante">Krónes</p>
-                        </div>
-                    </div>
-                    <button class="btn-card">Cadrastrar-se</button>
-                    <div class="vagas-informacoes">
-                        <div class="info-vaga">
-                            <p class="titulo-info">Responsabilidade e atuação</p>
-                            <p class="text-info">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-
-                            <p class="titulo-info">Requisitos e qualificações</p>
-                            <p class="text-info">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-
-                            <p class="titulo-info">Informações adicionais</p>
-                            <p class="text-info">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-
-                            <p class="titulo-info">Responsabilidade e atuação</p>
-                            <p class="text-info">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                        </div>
-                        <button id="read_button">Read more</button>
-                    </div>
-                    <div class="desc-vaga">
-                        <div class="desc">
-                            <p class="title-desc">Nível de experiência</p>
-                            <p class="text-desc">Lorem ipsum</p>
-                        </div>
-
-                        <div class="desc">
-                            <p class="title-desc">Função</p>
-                            <p class="text-desc">Lorem ipsum</p>
-                        </div>
-                    </div>
-
-                    <div class="desc-vaga2">
-                        <div class="desc">
-                            <p class="title-desc">Carga horária</p>
-                            <p class="text-desc">Lorem ipsum</p>
-                        </div>
-
-                        <div class="desc">
-                            <p class="title-desc">Setor</p>
-                            <p class="text-desc">Lorem ipsum</p>
-                        </div>
-                    </div>
-                </div> 
-                
-                <div id="content2" class="content">
-                    <div class="topo">
-                        <img class="topo-logo" src="projetos/logos/Lunessence.jpg" alt="logo da empresa">
-                        <div class="topo-text">
-                            <p class="topo-title">Auxiliar de serviços gerais | São José dos Campos - SP</p>
-                            <p class="topo-contratante">Almendra</p>
-                        </div>
-                    </div>
-                    <button class="btn-card">Cadrastrar-se</button>
-                    <div class="vagas-informacoes">
-                        <div class="info-vaga">
-                            <p class="titulo-info">Responsabilidade e atuação</p>
-                            <p class="text-info">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-
-                            <p class="titulo-info">Requisitos e qualificações</p>
-                            <p class="text-info">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-
-                            <p class="titulo-info">Informações adicionais</p>
-                            <p class="text-info">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-
-                            <p class="titulo-info">Responsabilidade e atuação</p>
-                            <p class="text-info">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                        </div>
-                        <button id="read_button">Read more</button>
-                    </div>
-                    <div class="desc-vaga">
-                        <div class="desc">
-                            <p class="title-desc">Nível de experiência</p>
-                            <p class="text-desc">Lorem ipsum</p>
-                        </div>
-
-                        <div class="desc">
-                            <p class="title-desc">Função</p>
-                            <p class="text-desc">Lorem ipsum</p>
-                        </div>
-                    </div>
-
-                    <div class="desc-vaga2">
-                        <div class="desc">
-                            <p class="title-desc">Carga horária</p>
-                            <p class="text-desc">Lorem ipsum</p>
-                        </div>
-
-                        <div class="desc">
-                            <p class="title-desc">Setor</p>
-                            <p class="text-desc">Lorem ipsum</p>
-                        </div>
-                    </div>
-                </div> 
-
-                <div id="content3" class="content">
-                    <div class="topo">
-                        <img class="topo-logo" src="projetos/logos/Vitalatte.jpg" alt="logo da empresa">
-                        <div class="topo-text">
-                            <p class="topo-title">Cabeleleira | Belo Horizonte - MG</p>
-                            <p class="topo-contratante">Lunahair</p>
-                        </div>
-                    </div>
-                    <button class="btn-card">Cadrastrar-se</button>
-                    <div class="vagas-informacoes">
-                        <div class="info-vaga">
-                            <p class="titulo-info">Responsabilidade e atuação</p>
-                            <p class="text-info">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-
-                            <p class="titulo-info">Requisitos e qualificações</p>
-                            <p class="text-info">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-
-                            <p class="titulo-info">Informações adicionais</p>
-                            <p class="text-info">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-
-                            <p class="titulo-info">Responsabilidade e atuação</p>
-                            <p class="text-info">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                        </div>
-                        <button id="read_button">Read more</button>
-                    </div>
-                    <div class="desc-vaga">
-                        <div class="desc">
-                            <p class="title-desc">Nível de experiência</p>
-                            <p class="text-desc">Lorem ipsum</p>
-                        </div>
-
-                        <div class="desc">
-                            <p class="title-desc">Função</p>
-                            <p class="text-desc">Lorem ipsum</p>
-                        </div>
-                    </div>
-
-                    <div class="desc-vaga2">
-                        <div class="desc">
-                            <p class="title-desc">Carga horária</p>
-                            <p class="text-desc">Lorem ipsum</p>
-                        </div>
-
-                        <div class="desc">
-                            <p class="title-desc">Setor</p>
-                            <p class="text-desc">Lorem ipsum</p>
-                        </div>
-                    </div>
-                </div> 
-
-                <div id="content4" class="content">
-                    <div class="topo">
-                        <img class="topo-logo" src="projetos/logos/Lunessence.jpg" alt="logo da empresa">
-                        <div class="topo-text">
-                            <p class="topo-title">Atendente | Recife - PE</p>
-                            <p class="topo-contratante">Oravita</p>
-                        </div>
-                    </div>
-                    <button class="btn-card">Cadrastrar-se</button>
-                    <div class="vagas-informacoes">
-                        <div class="info-vaga">
-                            <p class="titulo-info">Responsabilidade e atuação</p>
-                            <p class="text-info">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-
-                            <p class="titulo-info">Requisitos e qualificações</p>
-                            <p class="text-info">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-
-                            <p class="titulo-info">Informações adicionais</p>
-                            <p class="text-info">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-
-                            <p class="titulo-info">Responsabilidade e atuação</p>
-                            <p class="text-info">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                        </div>
-                        <button id="read_button">Read more</button>
-                    </div>
-                    <div class="desc-vaga">
-                        <div class="desc">
-                            <p class="title-desc">Nível de experiência</p>
-                            <p class="text-desc">Lorem ipsum</p>
-                        </div>
-
-                        <div class="desc">
-                            <p class="title-desc">Função</p>
-                            <p class="text-desc">Lorem ipsum</p>
-                        </div>
-                    </div>
-
-                    <div class="desc-vaga2">
-                        <div class="desc">
-                            <p class="title-desc">Carga horária</p>
-                            <p class="text-desc">Lorem ipsum</p>
-                        </div>
-
-                        <div class="desc">
-                            <p class="title-desc">Setor</p>
-                            <p class="text-desc">Lorem ipsum</p>
-                        </div>
-                    </div>
-                </div>
+            <div class="cidade-estado">
+                <input type="text" class="inp-cidade" name="cidade" placeholder="Cidade" required>
+                <select class="sel-estado" name="estado" placeholder="Estado" required>
+                    <option value="AC" disabled selected>Acre</option>
+                    <option value="AL">Alagoas</option>
+                    <option value="AP">Amapá</option>
+                    <option value="AM">Amazonas</option>
+                    <option value="BA">Bahia</option>
+                    <option value="CE">Ceará</option>
+                    <option value="DF">Distrito Federal</option>
+                    <option value="ES">Espírito Santo</option>
+                    <option value="GO">Goiás</option>
+                    <option value="MA">Maranhão</option>
+                    <option value="MT">Mato Grosso</option>
+                    <option value="MS">Mato Grosso do Sul</option>
+                    <option value="MG">Minas Gerais</option>
+                    <option value="PA">Pará</option>
+                    <option value="PB">Paraíba</option>
+                    <option value="PR">Paraná</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="PI">Piauí</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="RN">Rio Grande do Norte</option>
+                    <option value="RS">Rio Grande do Sul</option>
+                    <option value="RO">Rondônia</option>
+                    <option value="RR">Roraima</option>
+                    <option value="SC">Santa Catarina</option>
+                </select>
             </div>
-        </div>
+            <textarea placeholder="Responsabilidade e atuação do colaborador com a empresa" name="atuacao" required></textarea>
+            <textarea placeholder="Requisitos e qualificações necessaarias que o colaborador deve possuir" name="requisitos" required></textarea>
+            <textarea placeholder="Informações adicionais caso necessário" name="informacoes"></textarea>
+            <input type="text" placeholder="Nível de experiência" name="nivel" required>
+            <input type="text" placeholder="Carga horária" name="carga" required>
+            <input type="text" placeholder="Setor" name="setor" required>
+        </form>
+
+        <button class="btn-add">
+            Postar vaga
+        </button>
+    </div>
     </div>
 
     <footer> <!-- FOOTER -->
