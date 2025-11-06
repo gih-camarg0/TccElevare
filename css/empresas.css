@@ -101,12 +101,37 @@
 .btn-ajuda{
     background-color: var(--text-color);
     border-radius: 25px;
+    border: none;
     height: 50px;
     width: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
+.btn-ajuda a{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--alternative-color);
+}
+
+.add-vaga{
+    background-color: var(--text-color);
+    border-radius: 25px;
+    border: none;
+    height: 50px;
+    width: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.add-vaga a{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--alternative-color);
+}
+
 .search i{
     font-size: 28px;
 }
