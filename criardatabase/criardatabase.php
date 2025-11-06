@@ -62,7 +62,7 @@ $stmt->bind_param("sss", )
 
 $conn->close();
 } else {
-    header("Location: cadastro.html");
+    header("Location: autentificacao/cadastro.html");
     exit();
 }
 ?>
