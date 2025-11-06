@@ -71,7 +71,7 @@
                                 <img class="vaga-logo" src="projetos/logos/Vitalatte.jpg" alt="logo da empresa">
                                 <div class="vaga-content">
                                     <p data-content="content1" class="vaga-title">{$row['funcao']} | {$row['cidade']} - {$row['estado']}</p>
-                                    <p class="vaga-contratante">Krónes</p>
+                                    <p class="vaga-contratante">{$row['empresa']}</p>
                                     <p class="vaga-tempo">Há 10 horas.</p>
                                 </div>
                             </li>
