@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&display=swap');
+:root{
+    --alternative-color:#001511;
+    --primary-color:#1FB19B;
+    --secondary-color:#207E70;
+    --text-color:#C5C5C5;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "AlegreyA", sans-serif;;
+}
+
+body{
+    background: url(../assets/background-autentificação2.jpg) no-repeat;
+    background-size: cover;
+    background-position: center top;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 100vh;
+}
+.content-form{
+    background-color: #eee;
+    border-radius: 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+    width: 850px;
+    height: 90vh;
+    max-width: 100%;
+    min-height: 500px;
+}
+.title-form{
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    font-weight: bold;
+    margin: 20px 20px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 10px 70px;
+}
+input,textarea,select {
+    padding: 9px 20px;
+    border: 0.5px solid #64C0DF; 
+    background-color: #308ea633; 
+    border-radius: 999px;
+    outline: none;
+    font-size: 14px;
+    color: #696767;
+}
+.cidade-estado {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+}
+.inp-cidade {
+  flex: 2;
+}
+.sel-estado {
+  flex: 1;
+}
+textarea {
+    border-radius: 20px;
+    resize: vertical;
+}
+::placeholder {
+    color: #696767;
+    font-size: 15px;
+}
+.btn-add{
+    margin: 0 80px 5px 80px;
+    border-radius: 20px;
+    color: white;
+    font-weight: bold;
+    background-color: var(--primary-color);
+    border: none;
+    font-size: 15px;
+    padding: 10px 13px;
+    width: 150px;
+    align-items: center;
+    cursor: pointer;
+}
+.btn-add a{
+    text-decoration: none;
+    color: white;
+}
+.btn-add:hover{
+    background-color: var(--secondary-color);
+    color: white;
+    transition: 0.6s ease;
+}
