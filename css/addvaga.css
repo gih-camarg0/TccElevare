@@ -54,6 +54,17 @@ input,textarea,select {
     font-size: 14px;
     color: #696767;
 }
+.empresa-funcao{
+  display: flex;
+  gap: 10px;
+  width: 100%;
+}
+.inp-empresa {
+  flex: 2;
+}
+.sel-funcao {
+  flex: 1;
+}
 .cidade-estado {
   display: flex;
   gap: 10px;

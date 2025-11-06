@@ -4,6 +4,7 @@ USE add_vagas;
 
 CREATE TABLE vaga (
   id INT AUTO_INCREMENT PRIMARY KEY,
+  empresa VARCHAR(100),
   funcao VARCHAR(100),
   cidade VARCHAR(100),
   estado

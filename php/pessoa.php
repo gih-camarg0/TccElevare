@@ -88,7 +88,7 @@
                             <img class="topo-logo" src="projetos/logos/Vitalatte.jpg" alt="logo da empresa">
                             <div class="topo-text">
                                 <p class="topo-title">{$row['funcao']} | {$row['cidade']} - {$row['estado']}</p>
-                                <p class="topo-contratante">Krónes</p>
+                                <p class="topo-contratante">{$row['empresa']}</p>
                             </div>
                         </div>
                         <button class="btn-card">Cadrastrar-se</button>

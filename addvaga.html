@@ -12,7 +12,10 @@
     <div class="content-form">
         <p class="title-form">Preencha o formulário a respeito da vaga que sua empresa quer disponibilizar</p>
         <form action="php/addvagas.php" method="POST">
-            <input type="text" class="inp-funcao" name="funcao" placeholder="Função" required>
+            <div class="empresa-funcao">
+                <input type="text" class="inp-funcao" name="funcao" placeholder="Função" required>
+                <input type="text" class="inp-empresa" name="emppresa" placeholder="Empresa contratante" required>
+            </div>
             <div class="cidade-estado">
                 <input type="text" class="inp-cidade" name="cidade" placeholder="Cidade" required>
                 <select class="sel-estado" name="estado" placeholder="Estado" required>

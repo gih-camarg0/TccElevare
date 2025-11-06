@@ -10,6 +10,7 @@
         die("Erro de conexão: " . $conn->connect_error);
     }
 
+    $empresa = $_POST['empresa'];
     $funcao = $_POST['funcao'];
     $cidade = $_POST['cidade'];
     $estado = $_POST['estado'];
@@ -20,7 +21,7 @@
     $carga = $_POST['carga'];
     $setor = $_POST['setor'];
 
-    $sql = "INSERT INTO contatos (funcao, cidade, estado, atuacao, requisitos, informacoes, nivel, carga, setor) VALUES ('$funcao', '$cidade', '$estado', '$atuacao', '$requisitos', '$informacoes', '$nivel', '$carga', '$setor')";
+    $sql = "INSERT INTO contatos (empresa, funcao, cidade, estado, atuacao, requisitos, informacoes, nivel, carga, setor) VALUES ('$empresa', '$funcao', '$cidade', '$estado', '$atuacao', '$requisitos', '$informacoes', '$nivel', '$carga', '$setor')";
 
     if ($conn->query($sql) === TRUE) {
         echo "Informações salvas com sucesso!";
