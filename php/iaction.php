@@ -36,7 +36,7 @@ if ($stmt === false) {
 $stmt->bind_param("ssssss", $nomecnt, $emailcnt, $telefonecnt , $perfilcnt , $proprietario );
 
 if ($stmt->execute ()) {
-    header ("Location: action.php");
+    header ("Location: iaction.php");
 }
 
 $conn->close();
