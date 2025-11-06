@@ -11,11 +11,11 @@
 <body>
     <div class="content-form">
         <p class="title-form">Preencha o formulário a respeito da vaga que sua empresa quer disponibilizar</p>
-        <form action="addvagas.php" method="POST">
-            <input type="text" class="inp-funcao" placeholder="Função" required>
+        <form action="php/addvagas.php" method="POST">
+            <input type="text" class="inp-funcao" name="funcao" placeholder="Função" required>
             <div class="cidade-estado">
-                <input type="text" class="inp-cidade" placeholder="Cidade" required>
-                <select class="sel-estado" placeholder="Estado" required>
+                <input type="text" class="inp-cidade" name="cidade" placeholder="Cidade" required>
+                <select class="sel-estado" name="estado" placeholder="Estado" required>
                     <option value="AC" disabled selected>Acre</option>
                     <option value="AL">Alagoas</option>
                     <option value="AP">Amapá</option>
@@ -42,12 +42,12 @@
                     <option value="SC">Santa Catarina</option>
                 </select>
             </div>
-            <textarea placeholder="Responsabilidade e atuação do colaborador com a empresa" required></textarea>
-            <textarea placeholder="Requisitos e qualificações necessaarias que o colaborador deve possuir" required></textarea>
-            <textarea placeholder="Informações adicionais caso necessário"></textarea>
-            <input type="text" placeholder="Nível de experiência" required>
-            <input type="text" placeholder="Carga horária" required>
-            <input type="text" placeholder="Setor" required>
+            <textarea placeholder="Responsabilidade e atuação do colaborador com a empresa" name="atuacao" required></textarea>
+            <textarea placeholder="Requisitos e qualificações necessaarias que o colaborador deve possuir" name="requisitos" required></textarea>
+            <textarea placeholder="Informações adicionais caso necessário" name="informacoes"></textarea>
+            <input type="text" placeholder="Nível de experiência" name="nivel" required>
+            <input type="text" placeholder="Carga horária" name="carga" required>
+            <input type="text" placeholder="Setor" name="setor" required>
         </form>
 
         <button class="btn-add">
