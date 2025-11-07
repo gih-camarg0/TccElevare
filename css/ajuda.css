@@ -32,7 +32,7 @@
 }
 .navigation_header a{
     text-decoration: none;
-    color: var(--text-color);
+    color: var(--primary-color);
     transition: 1s;
     font-weight: bold;
     font-size: 25px;
@@ -66,4 +66,142 @@
 @keyframes showSidebar {
     from {margin-left: -100vw;}
     to {margin-left: -10vw;}
+}
+
+/* VACANCIES */
+.vacancies{
+    padding: 0 20px;
+    text-align: center;
+    height: 90vh;
+}
+
+.content-vacan{
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+    gap: 20px;
+}
+
+.content-leftV{
+  width: 50%;
+  height: 400px;
+  background-color: #1FB19B;
+  object-fit: cover;
+}
+
+.content-leftV img{
+  width: 600px;
+  height: 400px;
+  object-fit: cover;
+}
+
+.content-rightV{
+  justify-content: center;
+  padding: 40px 50px;
+  width: 50%;
+  font-size: 1.2rem;
+}
+
+.title-vacan {
+    display: inline-block;
+    padding: 5px 15px;
+    font-size: 1.7rem;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+/* PESSOA FÍSICA */
+.pes-fis{
+    padding: 0 20px;
+    text-align: center;
+    height: 90vh;
+}
+
+.content-pes{
+    display: flex;
+    justify-content: center; 
+    padding: 40px;
+    gap: 20px;
+}
+
+.content-rightP{
+  width: 50%;
+  height: 400px;
+  background-color: #1FB19B;
+  object-fit: cover;
+}
+
+.content-rightP img{
+  width: 600px;
+  height: 400px;
+  object-fit: cover;
+}
+
+.content-leftP{
+  justify-content: center;
+  padding: 40px 50px;
+  width: 50%;
+  font-size: 1.2rem;
+}
+
+.title-pes {
+    display: inline-block;
+    padding: 5px 15px;
+    font-size: 1.7rem;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+/* VACANCIES */
+.empresa{
+    padding: 0 20px;
+    text-align: center;
+    height: 90vh;
+}
+
+.content-emp{
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+    gap: 20px;
+}
+
+.content-leftE{
+  width: 50%;
+  height: 400px;
+  background-color: #1FB19B;
+  object-fit: cover;
+}
+
+.content-leftE img{
+  width: 600px;
+  height: 400px;
+  object-fit: cover;
+}
+
+.content-rightE{
+  justify-content: center;
+  padding: 40px 50px;
+  width: 50%;
+  font-size: 1.2rem;
+}
+
+.title-emp {
+    display: inline-block;
+    padding: 5px 15px;
+    font-size: 1.7rem;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+/* FOOTER */
+#copyright{
+    display: flex;
+    justify-content: center;
+    background-color: var(--alternative-color);
+    font-size: 20px;
+    padding: 25px;
+    font-weight: 500;
+    border-top: 1px solid var(--secondary-color);
+    color: var(--text-color);
 }
