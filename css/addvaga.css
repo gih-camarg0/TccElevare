@@ -76,8 +76,6 @@ body{
 
 /* CONTENT */
 #geral_container{
-    height: 74vh;
-    margin: 0 90px 20px;
     display: flex;
     align-items: center;
     justify-content: center;
