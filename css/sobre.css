@@ -118,6 +118,12 @@
   object-fit: cover;
 }
 
+.left-quem img{
+  width: 600px;
+  height: 400px;
+  object-fit: cover;
+}
+
 .right-quem {
   justify-content: center;
   padding: 40px 50px;
