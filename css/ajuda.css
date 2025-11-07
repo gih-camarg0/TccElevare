@@ -72,7 +72,7 @@
 .vacancies{
     padding: 0 20px;
     text-align: center;
-    height: 90vh;
+    height: 65vh;
 }
 
 .content-vacan{
@@ -84,14 +84,8 @@
 
 .content-leftV{
   width: 50%;
-  height: 400px;
+  height: 341px;
   background-color: #1FB19B;
-  object-fit: cover;
-}
-
-.content-leftV img{
-  width: 600px;
-  height: 400px;
   object-fit: cover;
 }
 
@@ -114,7 +108,7 @@
 .pes-fis{
     padding: 0 20px;
     text-align: center;
-    height: 90vh;
+    height: 65vh;
 }
 
 .content-pes{
@@ -126,14 +120,8 @@
 
 .content-rightP{
   width: 50%;
-  height: 400px;
+  height: 341px;
   background-color: #1FB19B;
-  object-fit: cover;
-}
-
-.content-rightP img{
-  width: 600px;
-  height: 400px;
   object-fit: cover;
 }
 
@@ -152,11 +140,11 @@
     margin-bottom: 10px;
 }
 
-/* VACANCIES */
+/* EMPRESA */
 .empresa{
     padding: 0 20px;
     text-align: center;
-    height: 90vh;
+    height: 65vh;
 }
 
 .content-emp{
@@ -168,14 +156,8 @@
 
 .content-leftE{
   width: 50%;
-  height: 400px;
+  height: 341px;
   background-color: #1FB19B;
-  object-fit: cover;
-}
-
-.content-leftE img{
-  width: 600px;
-  height: 400px;
   object-fit: cover;
 }
 
