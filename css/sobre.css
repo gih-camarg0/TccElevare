@@ -282,7 +282,7 @@
 
 /*SECTION POR QUE ESCOLHER A ELEVARE */
 .pq-escolher{
-    background-color: red;
+    background-color: var(--alternative-color);
     padding: 40px 20px;
     text-align: center;
 }
@@ -298,7 +298,9 @@
 }
 
 .text-pq{
-  
+  font-size: 1.7rem;
+  margin: 30px 150px;
+  color: var(--text-color);
 }
 
 /*SECTION ENTRE EM CONTATO */
