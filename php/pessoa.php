@@ -60,19 +60,18 @@
             </button>
         </div>            
             
+        <div id="container">;
+            <div class="lista-vagas">
             <?php
-                if ($result->num_rows > 0) {
-                while($row = $result->fetch_assoc()) {
-                echo "
-                <div id="container">;
-                    <div class="lista-vagas">
-                        <ul class="vagas">
-                            <li class="vaga">
-                                <img class="vaga-logo" src="projetos/logos/Vitalatte.jpg" alt="logo da empresa">
-                                <div class="vaga-content">
-                                    <p data-content="content1" class="vaga-title">{$row['funcao']} | {$row['cidade']} - {$row['estado']}</p>
-                                    <p class="vaga-contratante">{$row['empresa']}</p>
-                                    <p class="vaga-tempo">Há 10 horas.</p>
+            if ($result->num_rows > 0) {
+                while ($row = $result->fetch_assoc()) {
+                    echo '<ul class="vagas">';
+                    echo '<li class="vaga">';
+                    echo '<img class="vaga-logo" src="projetos/logos/Vitalatte.jpg" alt="logo da empresa">';
+                    echo '<div class="vaga-content">';
+                    echo '<p data-content="content1" class="vaga-title">' . htmlspecialchars($row['funcao']) . '</p>';
+                    echo '<p class="vaga-contratante">' . htmlspecialchars($row['empresa']) . '</p>';
+                    echo '<p class="vaga-tempo">Há 10 horas.</p>
                                 </div>
                             </li>
 
