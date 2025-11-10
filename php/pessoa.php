@@ -64,7 +64,7 @@
                 if ($result->num_rows > 0) {
                 while($row = $result->fetch_assoc()) {
                 echo "
-                <div id="container">
+                <div id="container">;
                     <div class="lista-vagas">
                         <ul class="vagas">
                             <li class="vaga">

@@ -1,0 +1,86 @@
+<?php
+// Conexão com o banco de dados
+$servername = "localhost";
+$username = "root";
+$password = "";
+$dbname = "add_vagas";
+
+$conn = new mysqli($servername, $username, $password, $dbname);
+
+if ($conn->connect_error) {
+    die("Erro na conexão: " . $conn->connect_error);
+}
+
+// Consulta ao banco de dados
+$sql = "SELECT * FROM vaga ORDER BY id DESC";
+$result = $conn->query($sql);
+?>
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vagas Disponíveis - Elevare</title>
+    <link rel="shortcut icon" type="image/png" href="../assets/logotipo.png">
+    <link rel="stylesheet" href="../css/pessoa.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <div class="header" id="header">
+            <button onclick="toggleSidebar()" class="btn_icon_header">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <div class="logo_header">
+                <img src="../assets/logoB.png" alt="Logo Elevare">
+            </div>
+            <div class="navigation_header" id="navigation_header">
+                <button onclick="toggleSidebar()" class="btn_icon_header">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+                <a href="../index.html">Home</a>
+                <a href="pessoa.php" class="active">Vagas</a>
+                <a href="../sobre.html">Sobre nós</a>
+                <a href="../autentificacao/login.html"><i class="fa-solid fa-user"></i></a>
+                <a href="../ajuda.html" target="_blank"><i class="fa-solid fa-question"></i></a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <h1>Vagas Disponíveis</h1>
+            <?php
+            if ($result->num_rows > 0) {
+                while ($row = $result->fetch_assoc()) {
+                    echo '<div class="vaga">';
+                    echo '<h2>' . htmlspecialchars($row['funcao']) . '</h2>';
+                    echo '<p><strong>Empresa:</strong> ' . htmlspecialchars($row['empresa']) . '</p>';
+                    echo '<p><strong>Cidade:</strong> ' . htmlspecialchars($row['cidade']) . ' - ' . htmlspecialchars($row['estado']) . '</p>';
+                    echo '<p><strong>Setor:</strong> ' . htmlspecialchars($row['setor']) . '</p>';
+                    echo '<p><strong>Nível:</strong> ' . htmlspecialchars($row['nivel']) . '</p>';
+                    echo '<p><strong>Carga horária:</strong> ' . htmlspecialchars($row['carga']) . '</p>';
+                    echo '<p><strong>Atuação:</strong> ' . nl2br(htmlspecialchars($row['atuacao'])) . '</p>';
+                    echo '<p><strong>Requisitos:</strong> ' . nl2br(htmlspecialchars($row['requisitos'])) . '</p>';
+                    if (!empty($row['informacoes'])) {
+                        echo '<p><strong>Informações adicionais:</strong> ' . nl2br(htmlspecialchars($row['informacoes'])) . '</p>';
+                    }
+                    echo '</div>';
+                }
+            } else {
+                echo '<p class="sem-vagas">Nenhuma vaga disponível no momento.</p>';
+            }
+            $conn->close();
+            ?>
+        </div>
+    </main>
+
+    <footer>
+        <div id="copyright">
+            &copy; 2025 ELEVARE.
+        </div>
+    </footer>
+</body>
+</html>
