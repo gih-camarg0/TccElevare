@@ -272,7 +272,7 @@
   margin: 0 350px;;
 }
 
-.lista-valores li:nth-child(1) { background-color:var(--primary-color); padding: 15px 25px;}
+.lista-valores li:nth-child(1) { background-color:var(--primary-color); padding: 15px 2px;}
 .lista-valores li:nth-child(2) { background-color:var(--secondary-color); padding: 15px 25px;}
 .lista-valores li:nth-child(3) { background-color:var(--primary-color); padding: 15px 25px;}
 .lista-valores li:nth-child(4) { background-color:var(--secondary-color); padding: 15px 25px;}
