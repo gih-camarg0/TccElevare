@@ -1,31 +1,27 @@
-function showToast(message, error = false) {
-    const toast = document.getElementById("toast");
-    toast.textContent = message;
-    toast.classList.toggle("error", error);
-    toast.style.opacity = "1";
-    
-    setTimeout(() => {
-        toast.style.opacity = "0";
-    }, 3000);
-}
-
-document.querySelector("form").addEventListener("submit", function(e){
+function toast(msg, error=false) {
+    const t = document.getElementById("toast");
+    t.innerHTML = msg;
+    t.className = error ? "error" : "";
+    t.style.opacity = "1";
+    setTimeout(()=> t.style.opacity = "0", 3000);
+  }
+  
+  document.getElementById("vagaForm").addEventListener("submit", function(e){
     e.preventDefault();
-
-    const formData = new FormData(this);
-
+  
     fetch("php/addvagas.php", {
         method: "POST",
-        body: formData
+        body: new FormData(this)
     })
-    .then(res => res.text())
-    .then(response => {
-        if(response.trim() === "success"){
-            showToast("✅ Vaga cadastrada com sucesso!");
+    .then(r => r.text())
+    .then(res => {
+        if (res.includes("success")) {
+            toast("✅ Vaga cadastrada com sucesso!");
             this.reset();
         } else {
-            showToast("❌ Erro ao cadastrar vaga", true);
+            toast("❌ Erro ao cadastrar vaga", true);
+            console.log(res);
         }
     })
-    .catch(() => showToast("❌ Falha de conexão", true));
-});
+    .catch(() => toast("❌ Falha de conexão", true));
+  });
