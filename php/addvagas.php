@@ -10,24 +10,28 @@
         die("Erro de conexão: " . $conn->connect_error);
     }
 
-    $empresa = $_POST['empresa'];
-    $funcao = $_POST['funcao'];
-    $cidade = $_POST['cidade'];
-    $estado = $_POST['estado'];
-    $atuacao = $_POST['atuacao'];
-    $requisitos = $_POST['requisitos'];
-    $informacoes = $_POST['informacoes'];
-    $nivel = $_POST['nivel'];
-    $carga = $_POST['carga'];
-    $setor = $_POST['setor'];
+    $empresa = $_POST['empresa'] ?? '';
+    $funcao = $_POST['funcao'] ?? '';
+    $cidade = $_POST['cidade'] ?? '';
+    $estado = $_POST['estado'] ?? '';
+    $atuacao = $_POST['atuacao'] ?? '';
+    $requisitos = $_POST['requisitos'] ?? '';
+    $informacoes = $_POST['informacoes'] ?? '';
+    $nivel = $_POST['nivel'] ?? '';
+    $carga = $_POST['carga'] ?? '';
+    $setor = $_POST['setor'] ?? '';
 
-    $sql = "INSERT INTO contatos (empresa, funcao, cidade, estado, atuacao, requisitos, informacoes, nivel, carga, setor) VALUES ('$empresa', '$funcao', '$cidade', '$estado', '$atuacao', '$requisitos', '$informacoes', '$nivel', '$carga', '$setor')";
+    if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
-    if ($conn->query($sql) === TRUE) {
-        echo "Informações salvas com sucesso!";
-    } else {
-        echo "Erro: " . $sql . "<br>" . $conn->error;
+        $sql = "INSERT INTO vaga (empresa, funcao, cidade, estado, atuacao, requisitos, informacoes, nivel, carga, setor)
+                VALUES ('$empresa', '$funcao', '$cidade', '$estado', '$atuacao', '$requisitos', '$informacoes', '$nivel', '$carga', '$setor')";
+    
+        if ($conn->query($sql) === TRUE) {
+            echo "Vaga cadastrada com sucesso!";
+        } else {
+            echo "Erro ao cadastrar vaga: " . $conn->error;
+        }
     }
-
+    
     $conn->close();
-?>
+    ?>

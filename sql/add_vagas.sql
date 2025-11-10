@@ -7,7 +7,7 @@ CREATE TABLE vaga (
   empresa VARCHAR(100),
   funcao VARCHAR(100),
   cidade VARCHAR(100),
-  estado
+  estado VARCHAR(2),
   atuacao TEXT,
   requisitos TEXT,
   informacoes TEXT,
