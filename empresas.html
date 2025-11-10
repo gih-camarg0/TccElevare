@@ -39,12 +39,13 @@
         <form action="php/addvagas.php" method="POST">
             <div class="empresa-funcao">
                 <input type="text" class="inp-funcao" name="funcao" placeholder="Função" required>
-                <input type="text" class="inp-empresa" name="emppresa" placeholder="Empresa contratante" required>
+                <input type="text" class="inp-empresa" name="empresa" placeholder="Empresa contratante" required>
             </div>
             <div class="cidade-estado">
                 <input type="text" class="inp-cidade" name="cidade" placeholder="Cidade" required>
-                <select class="sel-estado" name="estado" placeholder="Estado" required>
-                    <option value="AC" disabled selected>Acre</option>
+                <select class="sel-estado" name="estado" required>
+                    <option value="" disabled selected>Selecione o estado</option>
+                    <option value="AC">Acre</option>
                     <option value="AL">Alagoas</option>
                     <option value="AP">Amapá</option>
                     <option value="AM">Amazonas</option>
@@ -77,7 +78,13 @@
             <input type="text" placeholder="Nível de experiência" name="nivel" required>
             <input type="text" placeholder="Carga horária" name="carga" required>
             <input type="text" placeholder="Setor" name="setor" required>
+        
+            <!-- Botão DEVE estar dentro do form para submeter -->
+            <button type="submit" class="btn-add">
+                Postar vaga
+            </button>
         </form>
+        
 
         <button class="btn-add">
             Postar vaga
