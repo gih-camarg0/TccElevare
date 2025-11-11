@@ -71,71 +71,62 @@
                     echo '<div class="vaga-content">';
                     echo '<p data-content="content1" class="vaga-title">' . htmlspecialchars($row['funcao']) . '</p>';
                     echo '<p class="vaga-contratante">' . htmlspecialchars($row['empresa']) . '</p>';
-                    echo '<p class="vaga-tempo">Há 10 horas.</p>
-                                </div>
-                            </li>
-
-                            <li id="no_results">
-                                <p>Nenhum resultado encontrado</p>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <div class="card-vagas">
-                    <div id="content1" class="content">
-                        <div class="topo">
-                            <img class="topo-logo" src="projetos/logos/Vitalatte.jpg" alt="logo da empresa">
-                            <div class="topo-text">
-                                <p class="topo-title">{$row['funcao']} | {$row['cidade']} - {$row['estado']}</p>
-                                <p class="topo-contratante">{$row['empresa']}</p>
-                            </div>
-                        </div>
-                        <button class="btn-card">Cadrastrar-se</button>
-                        <div class="vagas-informacoes">
-                            <div class="info-vaga">
-                                <p class="titulo-info">Responsabilidade e atuação</p>
-                                <p class="text-info">{$row['atuacao']}</p>
-
-                                <p class="titulo-info">Requisitos e qualificações</p>
-                                <p class="text-info">{$row['requisitos']}</p>
-
-                                <p class="titulo-info">Informações adicionais</p>
-                                <p class="text-info">{$row['informacoes']}</p>
-                            </div>
-                                <button id="read_button">Read more</button>
-                            </div>
-                            <div class="desc-vaga">
-                                <div class="desc">
-                                    <p class="title-desc">Nível de experiência</p>
-                                    <p class="text-desc">{$row['nivel']}</p>
-                                </div>
-
-                                <div class="desc">
-                                    <p class="title-desc">Função</p>
-                                    <p class="text-desc">{$row['funcao']}</p>
-                                </div>
-                            </div>
-
-                            <div class="desc-vaga2">
-                                <div class="desc">
-                                    <p class="title-desc">Carga horária</p>
-                                    <p class="text-desc">{$row['carga']}</p>
-                                </div>
-
-                                <div class="desc">
-                                    <p class="title-desc">Setor</p>
-                                    <p class="text-desc">{$row['setor']}</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>"
+                    echo '<p class="vaga-tempo">Há 10 horas.</p>';
+                    echo '</div>';
+                    echo '</li>';
+                    echo '<li id="no_results">';
+                    echo '<p>Nenhum resultado encontrado</p>';
+                    echo '</li>';
+                    echo '</ul>';
+                    echo '</div>';
+                    echo '<div class="card-vagas">';
+                    echo '<div id="content1" class="content">';
+                    echo '<div class="topo">';
+                    echo '<img class="topo-logo" src="projetos/logos/Vitalatte.jpg" alt="logo da empresa">';
+                    echo '<div class="topo-text">';
+                    echo '<p class="topo-title">' . htmlspecialchars($row['funcao']) . '</p>';
+                    echo '<p class="topo-contratante">' . htmlspecialchars($row['empresa']) . '</p>';
+                    echo '</div>';
+                    echo '</div>';
+                    echo '<button class="btn-card">Cadrastrar-se</button>';
+                    echo '<div class="vagas-informacoes">';
+                    echo '<div class="info-vaga">';
+                    echo '<p class="titulo-info">Responsabilidade e atuação</p>';
+                    echo '<p class="text-info">' . htmlspecialchars($row['atuacao']) . '</p>';
+                    echo '<p class="titulo-info">Requisitos e qualificações</p>';
+                    echo '<p class="text-info">' . htmlspecialchars($row['requisitos']) . '</p>';
+                    echo '<p class="titulo-info">Informações adicionais</p>';
+                    echo '<p class="text-info">' . htmlspecialchars($row['informacoes']) . '</p>';
+                    echo '</div>';
+                    echo '<button id="read_button">Read more</button>';
+                    echo '</div>';
+                    echo '<div class="desc-vaga">';
+                    echo '<div class="desc">';
+                    echo '<p class="title-desc">Nível de experiência</p>';
+                    echo '<p class="text-desc"> . htmlspecialchars($row['nivel']) . '</p>';
+                    echo '</div>';
+                    echo '<div class="desc">';
+                    echo '<p class="title-desc">Função</p>';
+                    echo '<p class="text-desc"> . htmlspecialchars($row['funcao']) . '</p>';
+                    echo '</div>';
+                    echo '</div>';
+                    echo '<div class="desc-vaga2">';
+                    echo '<div class="desc">';
+                    echo '<p class="title-desc">Carga horária</p>';
+                    echo '<p class="text-desc"> . htmlspecialchars($row['carga']) . '</p>';
+                    echo '</div>';
+                    echo '<div class="desc">';
+                    echo '<p class="title-desc">Setor</p>';
+                    echo '<p class="text-desc"> . htmlspecialchars($row['setor']) . '</p>';
+                    echo '</div>';
+                    echo '</div>';
+                    echo '</div>';
+                    echo '</div>';
+                    echo '</div>';
             }
-                } else {
-                    echo "<li id="no_results">
-                            <p>Nenhum resultado encontrado</p>
-                        </li>";
-                    }
+                }else {
+                echo '<p class="sem-vagas">Nenhuma vaga disponível no momento.</p>';
+            }
                 $conn->close();
             ?>
     </div>
