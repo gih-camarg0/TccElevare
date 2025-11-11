@@ -241,13 +241,10 @@
   max-width: 700px;
 }
 
-.img-missao img {
+.img-missao{
   width: 100%;
-  max-width: 1000px;
   height: auto;
-  border-radius: 4px;
-  display: block;
-  margin: 0 auto;
+  margin: 0 0 40px 0;
   object-fit: cover;
 }
 
