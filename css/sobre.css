@@ -221,10 +221,10 @@
 /*SECTION NOSSA MISSÃO */
 .missao{
   text-align: left;
-  padding: 40px 20px;
 }
 
 .title-missao {
+  margin: 40px 50px 0 50px;
   display: inline-block;
   padding: 5px 15px;
   border: 1px solid var(--primary-color);
@@ -235,6 +235,7 @@
 }
 
 .text-missao{
+  margin: 0 50px 40px 50px;
   font-size: 1rem;
   color: #333;
   max-width: 700px;
