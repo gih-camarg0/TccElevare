@@ -220,7 +220,8 @@
 
 /*SECTION NOSSA MISSÃO */
 .missao{
-    background-color: blue;
+  text-align: left;
+  padding: 40px 20px;
 }
 
 .title-missao {
@@ -231,6 +232,22 @@
   font-size: 1.7rem;
   color: var(--primary-color);
   margin-bottom: 10px;
+}
+
+.text-missao{
+  font-size: 1rem;
+  color: #333;
+  max-width: 700px;
+}
+
+.img-missao img {
+  width: 100%;
+  max-width: 1000px;
+  height: auto;
+  border-radius: 4px;
+  display: block;
+  margin: 0 auto;
+  object-fit: cover;
 }
 
 /*SECTION NOSSA VISÃO */
