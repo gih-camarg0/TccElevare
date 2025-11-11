@@ -253,7 +253,42 @@
 
 /*SECTION NOSSA VISÃO */
 .visao{
-    background-color:red;
+    background-color:var(--alternative-color);
+    padding: 0 20px;
+    text-align: center;
+    height: 70vh;
+}
+
+.content-visao{
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+    gap: 20px;
+}
+
+.left-visao{
+  width: 50%;
+  height: 400px;
+  background-color: #1FB19B;
+  object-fit: cover;
+}
+
+.left-visao img{
+  width: 600px;
+  height: 400px;
+  object-fit: cover;
+}
+
+.right-visao {
+  justify-content: center;
+  padding: 40px 50px;
+  width: 50%;
+  font-size: 1.2rem;
+}
+
+.text-visao{
+  font-size: 1.7rem;
+  color: white;
 }
 
 .title-visao {
