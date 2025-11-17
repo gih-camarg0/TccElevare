@@ -150,21 +150,21 @@
     margin: auto 11%;
     font-size: 20px;
 }
-.cerceta{
+.color-1{
     background-color: #567C8D;
     height: 29vh;
     display: flex;
     align-items: center; 
 }
-.bege{
+.color-2{
     background-color: #F5EFEB;
     height: 14.5vh;
 }
-.ceu{
+.color-3{
     background-color: #C8D9E6;
     height: 14.5vh;
 }
-.marinho{
+.color-4{
     background-color: #2F4156;
     height: 29vh;
     display: flex;
