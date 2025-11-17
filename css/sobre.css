@@ -41,18 +41,18 @@
     color: var(--secondary-color);
 }
 #btnLeitor{
-  background-color: #0055cc;
-  color: white;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  padding: 10px 14px;
-  font-size: 15px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
-  transition: background 0.3s ease, transform 0.2s ease;
+    background-color: #0055cc;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 14px;
+    font-size: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+    transition: background 0.3s ease, transform 0.2s ease;
 }
 #btnLeitor:focus {
     outline: 3px solid #ffcc00;
@@ -256,20 +256,20 @@
 }
 
 .text-garantia{
-border:3px solid var(--primary-color);
-border-radius:18px;
-padding:2rem 2.5rem;
-max-width:900px;
-margin:0 auto;
+    border:3px solid var(--primary-color);
+    border-radius:18px;
+    padding:2rem 2.5rem;
+    max-width:900px;
+    margin:0 auto;
 }
 
 
 ul{
-text-align:left;
-max-width:800px;
-margin:0 auto;
-font-size:1.15rem;
-line-height:1.7;
+    text-align:left;
+    max-width:800px;
+    margin:0 auto;
+    font-size:1.15rem;
+    line-height:1.7;
 }
 
 
@@ -384,6 +384,51 @@ ul li{ margin-bottom:0.8rem; }
   margin: 30px 150px;
   color: var(--text-color);
 }
+
+/*SECTION PRIORIDADES */
+.prioridades{
+    background-color: var(--alternative-color);
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.title-prioridades {
+    display: inline-block;
+    padding: 5px 15px;
+    border: 1px solid var(--primary-color);
+    border-radius: 30px;
+    font-size: 1.7rem;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+.cards{
+    margin: 20px 40px;
+    align-items:center;
+    justify-content: center;
+    gap:2rem;
+    flex-wrap:wrap;
+    display:flex;
+}
+
+.card{
+    width:250px;
+    height:200px;
+    padding:1.5rem;
+    border-radius:6px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    font-size:1.15rem;
+    line-height:1.45;
+    font-weight:500;
+}
+
+.c1{background:var(--primary-color);}
+.c2{background:var(--secondary-color);}
+.c3{background:var(--primary-color);}
+.c4{background:var(--secondary-color);}
 
 /*SECTION ENTRE EM CONTATO */
 .entre-contato{
