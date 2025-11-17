@@ -194,6 +194,15 @@
     align-items: center; 
 }
 
+/*SECTION VALORES*/
+.valores{
+    background-color: #22873e7e;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+
 /*SECTION ENTRE CONTATO*/
 .contact{
     background-color: #F5F5F5;
