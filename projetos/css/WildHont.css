@@ -175,6 +175,24 @@
     display: flex;
     align-items: center; 
 }
+.color-4{
+    background-color: #404E41;
+    height: 14.5vh;
+    display: flex;
+    align-items: center; 
+}
+.color-5{
+    background-color: #B5B89D;
+    height: 14.5vh;
+    display: flex;
+    align-items: center; 
+}
+.color-6{
+    background-color: #4B3A3A;
+    height: 14.5vh;
+    display: flex;
+    align-items: center; 
+}
 
 /*SECTION ENTRE CONTATO*/
 .contact{
