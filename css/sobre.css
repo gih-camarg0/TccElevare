@@ -239,23 +239,58 @@
   color: #333;
 }
 
-.img-missao{
-  width: 100%;
-  height: auto;
-  margin: 0 0 40px 0;
-  object-fit: cover;
+/*SECTION GARANTIA*/
+.garantia {
+  padding: 40px 20px;
+  text-align: center;
 }
+
+.title-garantia {
+    display: inline-block;
+    padding: 5px 15px;
+    border: 1px solid var(--primary-color);
+    border-radius: 30px;
+    font-size: 1.7rem;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+.text-garantia{
+border:3px solid var(--primary-color);
+border-radius:18px;
+padding:2rem 2.5rem;
+max-width:900px;
+margin:0 auto;
+}
+
+
+ul{
+text-align:left;
+max-width:800px;
+margin:0 auto;
+font-size:1.15rem;
+line-height:1.7;
+}
+
+
+ul li{ margin-bottom:0.8rem; }
 
 /*SECTION NOSSA VISÃO */
 .visao{
     background-color:var(--alternative-color);
     padding: 0 20px;
     text-align: center;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin:auto;
 }
 
 .content-visao{
     display: flex;
     justify-content: center;
+    display:flex;
+    align-items:center;
     padding: 40px;
     gap: 20px;
     margin: 0 0 40px 0;
@@ -263,13 +298,12 @@
 
 .left-visao{
   width: 50%;
-  height: 400px;
-  background-color: #1FB19B;
   object-fit: cover;
 }
 
 #eyes{
-  font-size: 500px;
+  font-size: 250px;
+  color: var(--primary-color);
 }
 
 .right-visao {
@@ -310,18 +344,23 @@
     margin-bottom: 10px;
 }
 
-.lista-valores {
-  list-style-position: inside;
-  text-align: left;
-  font-size: 1.5rem;
-  padding: 40px 80px;
-  margin: 0 350px;;
+.icon{
+    font-size:70px;
+    margin-bottom:1.5rem;
 }
 
-.lista-valores li:nth-child(1) { background-color:var(--primary-color); padding: 15px 2px;}
-.lista-valores li:nth-child(2) { background-color:var(--secondary-color); padding: 15px 25px;}
-.lista-valores li:nth-child(3) { background-color:var(--primary-color); padding: 15px 25px;}
-.lista-valores li:nth-child(4) { background-color:var(--secondary-color); padding: 15px 25px;}
+.step{
+    padding:14px;
+    font-size:1.2rem;
+    color:#fff;
+    margin:0 auto;
+    font-weight:500;
+}
+
+.s1{background: var(--primary-color); width:36%;}
+.s2{background: var(--secondary-color); width:40%;}
+.s3{background:var(--primary-color); width:44%;}
+.s4{background: var(--secondary-color); width:48%;}
 
 /*SECTION POR QUE ESCOLHER A ELEVARE */
 .pq-escolher{
