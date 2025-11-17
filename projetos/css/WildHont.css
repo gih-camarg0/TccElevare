@@ -157,23 +157,21 @@
     margin: auto 11%;
     font-size: 20px;
 }
-.old-lavander{
-    background-color: #71557A;
-    height: 29vh;
+.color-1{
+    background-color: #2A3E33;
+    height: 14.5vh;
     display: flex;
     align-items: center; 
 }
-.middle-purple{
-    background-color: #D183A9;
+.color-2{
+    background-color: #546B51;
     height: 14.5vh;
+    display: flex;
+    align-items: center; 
 }
-.queen-pink{
-    background-color: #F3C8DD;
+.color-3{
+    background-color: #7D8A6E;
     height: 14.5vh;
-}
-.brown-chocolate{
-    background-color: #4B1535;
-    height: 29vh;
     display: flex;
     align-items: center; 
 }
