@@ -268,10 +268,8 @@
   object-fit: cover;
 }
 
-.left-visao img{
-  width: 600px;
-  height: 400px;
-  object-fit: cover;
+#eyes{
+  font-size: 500px;
 }
 
 .right-visao {

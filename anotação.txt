@@ -1,4 +1,34 @@
-@import url('https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&display=swap');
+<?php
+    $servername = "localhost";
+    $username = "root";
+    $password = "";
+    $dbname = "add_vagas";
+
+    $conn = new mysqli($servername, $username, $password, $dbname);
+
+    if ($conn->connect_error) {
+        die("Erro de conexão: " . $conn->connect_error);
+    }
+
+    $sql = "SELECT * FROM vaga ORDER BY id DESC";
+    $result = $conn->query($sql);
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elevare - Pessoa Física</title>
+    
+    <link rel="shortcut icon" type="imagex/png" href="../assets/logotipo.png">
+
+    <link rel="stylesheet" href="../css/empresas.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&display=swap');
 :root{
     --alternative-color:#001511;
     --primary-color:#1FB19B;
@@ -24,7 +54,7 @@
     justify-content: space-between;
 }
 .header{
-    padding: 1% 50px 1% 50px; 
+    padding: 1% 10% 1% 10%; 
 }
 .navigation_header{
     gap: 3em;
@@ -32,42 +62,13 @@
 }
 .navigation_header a{
     text-decoration: none;
-    color: var(--alternative-color);
+    color: var(--text-color);
     transition: 1s;
     font-weight: bold;
     font-size: 25px;
 }
 .navigation_header a:hover{
     color: var(--secondary-color);
-}
-#btnLeitor{
-  background-color: #0055cc;
-  color: white;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  padding: 10px 14px;
-  font-size: 15px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
-  transition: background 0.3s ease, transform 0.2s ease;
-}
-#btnLeitor:focus {
-    outline: 3px solid #ffcc00;
-    outline-offset: 3px;
-}
-#btnLeitor svg {
-    flex-shrink: 0;
-}
-@media (max-width: 600px) {
-    #btnLeitor {
-      bottom: 15px;
-      right: 15px;
-      padding: 8px 12px;
-      font-size: 14px;
-    }
 }
 .btn_icon_header{
     background: transparent;
@@ -97,324 +98,325 @@
     to {margin-left: -10vw;}
 }
 
-/*SECTION QUEM SOMOS? */
-.quem-somos{
-    padding: 0 20px;
-    text-align: center;
-    height: 70vh;
+/* CONTENT */
+#geral_container{
+    height: 74vh;
+    margin: 0 90px 20px;
 }
 
-.content-quem{
+/* SEARCH */
+.initial-icons{
+    margin: 0px 0px 0px 28px;
+    border-radius: 25px;
+    width: 98%;
+    height: 50px;
+    padding: 0px 25px 0px 25px;
     display: flex;
-    justify-content: center;
-    padding: 40px;
-    gap: 20px;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
 }
 
-.left-quem{
-  width: 50%;
-  height: 400px;
-  background-color: #1FB19B;
-  object-fit: cover;
-}
-
-.left-quem img{
-  width: 600px;
-  height: 400px;
-  object-fit: cover;
-}
-
-.right-quem {
-  justify-content: center;
-  padding: 40px 50px;
-  width: 50%;
-  font-size: 1.2rem;
-}
-
-.title-quem {
-    display: inline-block;
-    padding: 5px 15px;
-    border: 1px solid var(--primary-color);
-    border-radius: 30px;
-    font-size: 1.7rem;
-    color: var(--primary-color);
-    margin-bottom: 10px;
-}
-
-/*SECTION CONHEÇA NOSSOS FUNDADORES */
-.fundadores {
-  padding: 40px 20px;
-  background-color: var(--alternative-color);
-  text-align: center;
-  height: 70vh;
-}
-
-.title-fundadores {
-    display: inline-block;
-    padding: 5px 15px;
-    border: 1px solid var(--primary-color);
-    border-radius: 30px;
-    font-size: 1.7rem;
-    color: var(--primary-color);
-    margin-bottom: 10px;
-}
-
-.membros {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 30px;
-  margin-top: 20px;
-}
-
-.membro {
-  max-width: 180px;
-  background-color: #f1f1f1;
-  border-radius: 16px;
-  padding: 16px;
-  box-shadow: 0 2px 6px rgba(80, 80, 80, 0.1);
-}
-
-.membro img {
-  width: 120px;
-  height: 120px;
-  object-fit: cover;
-  border-radius: 50%;
-  margin-bottom: 10px;
-}
-
-.membro h3 {
-  margin-bottom: 8px;
-  font-size: 1.1rem;
-  color: var(--primary-color);
-}
-
-.membro p {
-  font-size: 0.85rem;
-  color: var(--preto);
-  margin-bottom: 12px;
-}
-
-.contato {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-}
-
-.contato button {
-  background-color: var(--primary-color);
-  border: none;
-  padding: 6px 12px;
-  border-radius: 20px;
-  color: white;
-  font-size: 0.75rem;
-  cursor: pointer;
-}
-
-.contato a {
-  color: black;
-  font-size: 1.2rem;
-  text-decoration: none;
-}
-
-/*SECTION NOSSA MISSÃO */
-.missao{
-  text-align: left;
-}
-
-.title-missao {
-  margin: 40px 50px 0 50px;
-  display: inline-block;
-  padding: 5px 15px;
-  border: 1px solid var(--primary-color);
-  border-radius: 30px;
-  font-size: 1.7rem;
-  color: var(--primary-color);
-  margin-bottom: 10px;
-}
-
-.text-missao{
-  margin: 0 50px 40px 50px;
-  font-size: 1rem;
-  color: #333;
-  max-width: 700px;
-}
-
-.img-missao img {
-  width: 100%;
-  max-width: 1000px;
-  height: auto;
-  border-radius: 4px;
-  display: block;
-  margin: 0 auto;
-  object-fit: cover;
-}
-
-/*SECTION NOSSA VISÃO */
-.visao{
-    background-color:var(--alternative-color);
-    padding: 0 20px;
-    text-align: center;
-    height: 70vh;
-}
-
-.content-visao{
-    display: flex;
-    justify-content: center;
-    padding: 40px;
-    gap: 20px;
-}
-
-.left-visao{
-  width: 50%;
-  height: 400px;
-  background-color: #1FB19B;
-  object-fit: cover;
-}
-
-.left-visao img{
-  width: 600px;
-  height: 400px;
-  object-fit: cover;
-}
-
-.right-visao {
-  justify-content: center;
-  padding: 40px 50px;
-  width: 50%;
-  font-size: 1.2rem;
-}
-
-.text-visao{
-  font-size: 1.7rem;
-  color: white;
-}
-
-.title-visao {
-  display: inline-block;
-  padding: 5px 15px;
-  border: 1px solid var(--primary-color);
-  border-radius: 30px;
-  font-size: 1.7rem;
-  color: var(--primary-color);
-  margin-bottom: 10px;
-}
-
-/*SECTION NOSSOS VALORES */
-.valores{
-    padding: 40px 20px;
-    text-align: center;
-}
-
-.title-valores {
-    display: inline-block;
-    padding: 5px 15px;
-    border: 1px solid var(--primary-color);
-    border-radius: 30px;
-    font-size: 1.7rem;
-    color: var(--primary-color);
-    margin-bottom: 10px;
-}
-
-.lista-valores {
-  list-style-position: inside;
-  text-align: left;
-  font-size: 1.5rem;
-  padding: 40px 80px;
-  margin: 0 350px;;
-}
-
-.lista-valores li:nth-child(1) { background-color:var(--primary-color); padding: 15px 2px;}
-.lista-valores li:nth-child(2) { background-color:var(--secondary-color); padding: 15px 25px;}
-.lista-valores li:nth-child(3) { background-color:var(--primary-color); padding: 15px 25px;}
-.lista-valores li:nth-child(4) { background-color:var(--secondary-color); padding: 15px 25px;}
-
-/*SECTION POR QUE ESCOLHER A ELEVARE */
-.pq-escolher{
-    background-color: var(--alternative-color);
-    padding: 40px 20px;
-    text-align: center;
-}
-
-.title-pq {
-  display: inline-block;
-  padding: 5px 15px;
-  border: 1px solid var(--primary-color);
-  border-radius: 30px;
-  font-size: 1.7rem;
-  color: var(--primary-color);
-  margin-bottom: 10px;
-}
-
-.text-pq{
-  font-size: 1.7rem;
-  margin: 30px 150px;
-  color: var(--text-color);
-}
-
-/*SECTION ENTRE EM CONTATO */
-.entre-contato{
-    background-color: white;
+.search{
+    background-color: var(--text-color);
+    border-radius: 25px;
+    width: 420px;
+    height: 50px;
+    padding: 0px 25px 0px 25px;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 60px 0px;
 }
-.contato-content {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 200px;
+
+.btn-ajuda{
+    background-color: var(--text-color);
+    border-radius: 25px;
+    border: none;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-.contato-left {
-  flex: 1;
+.btn-ajuda a{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--alternative-color);
 }
-.contato-subtitle {
-  color: black;
-  font-size: 14px;
-  margin-bottom: 12px;
+
+.add-vaga{
+    background-color: var(--text-color);
+    border-radius: 25px;
+    border: none;
+    height: 50px;
+    width: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-.contato-title{
-  font-size: 42px;
-  font-weight: bold;
-  line-height: 1.2;
-  color: var(--alternative-color);
+.add-vaga a{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--alternative-color);
 }
-.contato-right {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+
+.search i{
+    font-size: 28px;
 }
-.contato-desc {
-  font-size: 14px;
-  color: black;
-  margin-bottom: 20px;
-  max-width: 400px;
+
+.search .input-field{
+    width: 100%;
+    font-size: 20px;
+    border: none;
+    background-color: transparent;
 }
-.btn-contato {
-  background-color: var(--primary-color);
-  color: white;
-  padding: 14px 28px;
-  border-radius: 30px;
-  text-decoration: none;
-  font-weight: 600;
-  transition: background 0.3s ease;
-  width: fit-content;
+
+.input-field:focus{
+    outline: none;
 }
-.btn-contato:hover {
-  background-color: var(--secondary-color);
+
+/* CONTAINER */
+#container{
+    display: flex;
+    padding: 20px 80px;
+    gap: 40px;
+}
+
+/************* LISTA DE VAGAS *************/
+.vagas{
+    width: 50%;
+    list-style: none;
+}
+
+.vaga{
+    display: flex;
+    gap: 15px;
+    padding: 12px 0;
+    border-bottom: 1px solid #CCC;
+    cursor: pointer;
+}
+
+.vaga-logo{
+    width: 70px;
+    height: 70px;
+    object-fit: contain;
+}
+
+.vaga-title{
+    font-size: 20px;
+    font-weight: bold;
+    color: #2B2B2B;
+}
+
+.vaga-contratante,
+.vaga-tempo{
+    font-size: 15px;
+    color: #464646;
+}
+
+/************** CARD DA DIREITA **************/
+.card-vagas{
+    width: 50%;
+    background: #F3F3F3;
+    padding: 20px;
+    border-radius: 6px;
+}
+
+.topo{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.topo-logo{
+    width: 75px;
+    height: 75px;
+    object-fit: contain;
+}
+
+.topo-title{
+    font-size: 22px;
+    font-weight: 700;
+    color: #2B2B2B;
+}
+
+.topo-contratante{
+    font-size: 16px;
+    color: #5A5A5A;
+}
+
+.btn-card{
+    margin-top: 15px;
+    background: var(--primary-color);
+    border: none;
+    padding: 8px 18px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.btn-card:hover{
+    background: var(--secondary-color);
+}
+
+.info-vaga{
+    margin-top: 20px;
+    font-size: 15px;
+    color: #3B3B3B;
+}
+
+.titulo-info{
+    font-size: 17px;
+    font-weight: bold;
+    margin-top: 12px;
+}
+
+.text-info{
+    margin-bottom: 10px;
+}
+
+.desc-vaga,
+.desc-vaga2{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.title-desc{
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.text-desc{
+    font-size: 15px;
 }
 
 /* FOOTER */
 #copyright{
-    display: flex;
-    justify-content: center;
-    background-color: var(--alternative-color);
-    font-size: 20px;
+    margin-top: 50px;
     padding: 25px;
-    font-weight: 500;
-    border-top: 1px solid var(--secondary-color);
+    text-align: center;
+    background-color: var(--alternative-color);
     color: var(--text-color);
+    font-size: 18px;
 }
+</style>
+<body>
+    <header> <!-- HEADER -->
+        <div class="header" id="header">
+            <button onclick="toggleSidebar()" class="btn_icon_header">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <div class="logo_header">
+                <img src="assets/logo.png" alt="">
+            </div>
+            <div class="navigation_header" id="navigation_header">
+                <button onclick="toggleSidebar()" class="btn_icon_header">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+                    <a href="../index.html">Home</a>
+                    <a href="pesfis.html">Vacancies</a>
+                    <a href="../sobre.html">Sobre nós</a>
+                    <a href="a../utentificacao/login.html"><i class="fa-solid fa-user"></i></a>
+            </div>
+        </div>
+    </header>
+
+    <div id="geral_container">
+        <div class="initial-icons">
+            <div class="search">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" id="input_field" class="input-field" placeholder="Pesquisar">
+            </div>
+    
+            <button class="btn-ajuda">
+                <a href="../ajuda.html"><i class="fa-solid fa-question"></i></a>
+            </button>
+        </div>            
+            
+        <div id="container">;
+            <div class="lista-vagas">
+            <?php
+            if ($result->num_rows > 0) {
+                while ($row = $result->fetch_assoc()) {
+                    echo '<ul class="vagas">';
+                    echo '<li class="vaga">';
+                    echo '<img class="vaga-logo" src="projetos/logos/Vitalatte.jpg" alt="logo da empresa">';
+                    echo '<div class="vaga-content">';
+                    echo '<p data-content="content1" class="vaga-title">' . htmlspecialchars($row['funcao']) . '</p>';
+                    echo '<p class="vaga-contratante">' . htmlspecialchars($row['empresa']) . '</p>';
+                    echo '<p class="vaga-tempo">Há 10 horas.</p>';
+                    echo '</div>';
+                    echo '</li>';
+                    echo '<li id="no_results">';
+                    echo '<p>Nenhum resultado encontrado</p>';
+                    echo '</li>';
+                    echo '</ul>';
+                    echo '</div>';
+                    echo '<div class="card-vagas">';
+                    echo '<div id="content1" class="content">';
+                    echo '<div class="topo">';
+                    echo '<img class="topo-logo" src="projetos/logos/Vitalatte.jpg" alt="logo da empresa">';
+                    echo '<div class="topo-text">';
+                    echo '<p class="topo-title">' . htmlspecialchars($row['funcao']) . '</p>';
+                    echo '<p class="topo-contratante">' . htmlspecialchars($row['empresa']) . '</p>';
+                    echo '</div>';
+                    echo '</div>';
+                    echo '<button class="btn-card">Cadrastrar-se</button>';
+                    echo '<div class="vagas-informacoes">';
+                    echo '<div class="info-vaga">';
+                    echo '<p class="titulo-info">Responsabilidade e atuação</p>';
+                    echo '<p class="text-info">' . htmlspecialchars($row['atuacao']) . '</p>';
+                    echo '<p class="titulo-info">Requisitos e qualificações</p>';
+                    echo '<p class="text-info">' . htmlspecialchars($row['requisitos']) . '</p>';
+                    echo '<p class="titulo-info">Informações adicionais</p>';
+                    echo '<p class="text-info">' . htmlspecialchars($row['informacoes']) . '</p>';
+                    echo '</div>';
+                    echo '<button id="read_button">Read more</button>';
+                    echo '</div>';
+                    echo '<div class="desc-vaga">';
+                    echo '<div class="desc">';
+                    echo '<p class="title-desc">Nível de experiência</p>';
+                    echo '<p class="text-desc">' . htmlspecialchars($row['nivel']) . '</p>';
+                    echo '</div>';
+                    echo '<div class="desc">';
+                    echo '<p class="title-desc">Função</p>';
+                    echo '<p class="text-desc">' . htmlspecialchars($row['funcao']) . '</p>';
+                    echo '</div>';
+                    echo '</div>';
+                    echo '<div class="desc-vaga2">';
+                    echo '<div class="desc">';
+                    echo '<p class="title-desc">Carga horária</p>';
+                    echo '<p class="text-desc">' . htmlspecialchars($row['carga']) . '</p>';
+                    echo '</div>';
+                    echo '<div class="desc">';
+                    echo '<p class="title-desc">Setor</p>';
+                    echo '<p class="text-desc">' . htmlspecialchars($row['setor']) . '</p>';
+                    echo '</div>';
+                    echo '</div>';
+                    echo '</div>';
+                    echo '</div>';
+                    echo '</div>';
+            }
+                }else {
+                echo '<p class="sem-vagas">Nenhuma vaga disponível no momento.</p>';
+            }
+                $conn->close();
+            ?>
+    </div>
+
+    <footer> <!-- FOOTER -->
+        <div id="copyright">
+            &#169
+            2025
+            ELEVARE.
+       </div>
+    </footer>
+
+    <script src="../js/pesfis.js"></script>
+</body>
+</html>
