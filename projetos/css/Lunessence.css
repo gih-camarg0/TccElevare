@@ -152,21 +152,21 @@
     margin: auto 11%;
     font-size: 20px;
 }
-.old-lavander{
+.color-1{
     background-color: #71557A;
     height: 29vh;
     display: flex;
     align-items: center; 
 }
-.middle-purple{
+.color-2{
     background-color: #D183A9;
     height: 14.5vh;
 }
-.queen-pink{
+.color-3{
     background-color: #F3C8DD;
     height: 14.5vh;
 }
-.brown-chocolate{
+.color-4{
     background-color: #4B1535;
     height: 29vh;
     display: flex;
