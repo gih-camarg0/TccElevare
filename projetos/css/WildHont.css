@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Libre Baskerville", serif;
+}
+
+/* HEADER */
+.logo_header img{
+    width: 250px;
+}
+.header, .navigation_header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.header{
+    background-color: #22873e7e;
+    padding: 2% 10% 0 10%; 
+}
+.navigation_header{
+    gap: 3em;
+    z-index: 2;
+}
+.navigation_header a{
+    text-decoration: none;
+    color: white;
+    transition: 1s;
+    font-weight: bold;
+    font-size: 25px;
+}
+.navigation_header a:hover{
+    color: #003d11;
+}
+.btn_icon_header{
+    background: transparent;
+    border: none;
+    color: white;
+    cursor: pointer;
+    display: none;
+}
+@media screen and (max-width: 768px) {
+    .navigation_header{
+        position: absolute;
+        flex-direction: column !important;
+        top: 0;
+        background: #7ec5927e;
+        height: 100%;
+        width: 35vw;
+        padding: 1em;
+        animation-duration: 1s;
+        margin-left: -100vw;
+    }
+    .btn_icon_header{
+        display: block;
+    }
+}
+@keyframes showSidebar {
+    from {margin-left: -100vw;}
+    to {margin-left: -10vw;}
+}
+
+/*SECTION INITIAL*/
+.initial{
+    display: flex;
+    background-color: #22873e7e;
+    justify-content: space-between;
+    min-height: 87vh;
+    color: white;
+    align-items: center;
+}
+.right-initial{
+    flex: 1;
+    margin: auto 11%;
+}
+.type{
+    font-size: 17px;
+    border: 1px solid white;
+    border-radius: 50px;
+    padding: 2px 4px;
+    width: 200px;
+    text-align: center;
+}
+.name{
+    font-size: 80px;
+    font-weight: bold;
+}
+#color{
+    color: #165718;
+    font-size: 80px;
+    font-weight: bold;
+}
+.conheca-link{
+    font-size: 17px;
+    text-decoration: none;
+    color: white;
+
+}
+.conheca-link:hover{
+    color: #D183A9;
+    transition: 0.5s;
+}
+.left-initial{
+    flex: 1;
+}
+
+/*SECTION SOBRE*/
+.sobre{
+    background-color: #F5F5F5;
+    justify-content: space-between;
+    min-height: 87vh;
+    color: black;
+    display: flex;
+    align-items: center;
+}
+.right-sobre{
+    flex: 1;
+    margin: auto 11%;
+}
+.type-sobre{
+    font-size: 17px;
+    border: 1px solid black;
+    border-radius: 50px;
+    padding: 2px 4px;
+    width: 200px;
+    text-align: center;
+}
+.name-sobre{
+    font-size: 80px;
+    font-weight: bold;
+}
+.segmento{
+    font-size: 17px;
+    text-decoration: none;
+}
+.left-sobre{
+    flex: 2;
+    margin: 0 0 0 auto;
+}
+.text-sobre{
+    font-size: 16px;
+    width: 500px;
+}
+
+
+/*SECTION PALETTE*/
+.palette{
+    background-color: red;
+    min-height: 87vh;
+    color: black;
+}
+.text-palette{
+    color: #ffffffb3;
+    margin: auto 11%;
+    font-size: 20px;
+}
+.old-lavander{
+    background-color: #71557A;
+    height: 29vh;
+    display: flex;
+    align-items: center; 
+}
+.middle-purple{
+    background-color: #D183A9;
+    height: 14.5vh;
+}
+.queen-pink{
+    background-color: #F3C8DD;
+    height: 14.5vh;
+}
+.brown-chocolate{
+    background-color: #4B1535;
+    height: 29vh;
+    display: flex;
+    align-items: center; 
+}
+
+/*SECTION ENTRE CONTATO*/
+.contact{
+    background-color: #F5F5F5;
+    justify-content: space-between;
+    min-height: 60vh;
+    color: black;
+    display: flex;
+    align-items: center;
+}
+.contact-right{
+    flex: 1;
+    margin: auto 11%;
+}
+.contact-subtitle{
+    font-size: 20px;
+}
+.contact-title{
+    font-size: 38px;
+    font-weight: bold;
+}
+.contact-left{
+    flex: 2;
+    margin: 0 0 0 auto;
+}
+.contact-desc{
+    font-size: 18px;
+    margin-bottom: 20px;
+    width: 600px;
+}
+.btn-contact{
+    background-color: #71557A;
+    color: white;
+    padding: 14px 28px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+
+/* FOOTER */
+#copyright{
+    display: flex;
+    justify-content: center;
+    background-color: #71557A;
+    font-size: 16px;
+    padding: 25px;
+    color: white;
+}
