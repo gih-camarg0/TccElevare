@@ -182,9 +182,7 @@
 }
 .grid-c .text-c {
     font-size: 1rem;
-    margin-top: 5px;
-    margin-left: 25px;
-    margin-right: 25px;
+    margin: 5px 25px 0 25px;
 }
 .dados-text {
     margin-top: 20px;
@@ -317,6 +315,98 @@
     font-size: 20px;
   }
 }
+/*AVALIAÇÕES*/
+.avaliacoes{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 40px 0;
+    margin: 0 80px;
+}
+
+.avaliacoes .cards-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px; 
+    width: 100%;
+}
+
+.title-avaliacoes{
+    font-size: 28px;
+    font-weight: 600;
+    color: var(--primary-color);
+    margin-bottom: 30px;
+}
+
+.card-avaliacao {
+    width: 280px;
+    min-height: 330px;
+    background: #fff;
+    border: 3px solid var(--primary-color);
+    border-radius: 14px;
+    padding: 20px;
+    margin: 0 15px;
+    display: inline-block;
+    flex-direction: column;
+    box-shadow: 0px 3px 8px rgba(0,0,0,0.08);
+}
+
+.avaliacoes {
+    flex-wrap: wrap;
+}
+
+.avaliacoes > .card-avaliacao {
+    display: inline-flex;
+}
+
+.topo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.topo img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background: #d9d9d9;
+    flex-shrink: 0;
+}
+.topo .info-avaliador {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.1;
+
+}
+
+.nome-avaliador {
+    font-size: 16px;
+    font-weight: 600;
+    color: #00a08a;
+    margin: 0;
+}
+
+.empresa-avaliador {
+    font-size: 13px;
+    color: #6a6a6a;
+    margin: 2px 0 0;
+}
+
+.avaliacao i {
+    color: var(--primary-color);
+    margin-right: 2px;
+    font-size: 15px;
+}
+
+.desc-avaliacao {
+    font-size: 13px;
+    color: #333;
+    line-height: 1.35;
+    margin-top: 10px;
+}
+
 /* NOSSO PROCESSO */
 .processos{
     align-items: center;
