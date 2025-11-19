@@ -66,7 +66,7 @@
 /*SECTION INITIAL*/
 .initial{
     display: flex;
-    background-color: #22873e7e;
+    background-color: #409842;
     justify-content: space-between;
     min-height: 87vh;
     color: white;
@@ -109,7 +109,7 @@
 
 /*SECTION SOBRE*/
 .sobre{
-    background-color: #F5F5F5;
+    background-color: #22873E;
     justify-content: space-between;
     min-height: 87vh;
     color: black;
@@ -148,7 +148,6 @@
 
 /*SECTION PALETTE*/
 .palette{
-    background-color: red;
     min-height: 87vh;
     color: black;
 }
@@ -158,21 +157,21 @@
     font-size: 20px;
 }
 .color-1{
-    background-color: #71557A;
+    background-color: #409842;
     height: 29vh;
     display: flex;
     align-items: center; 
 }
 .color-2{
-    background-color: #D183A9;
+    background-color: #F5EFEB;
     height: 14.5vh;
 }
 .color-3{
-    background-color: #F3C8DD;
+    background-color: #22873E;
     height: 14.5vh;
 }
 .color-4{
-    background-color: #4B1535;
+    background-color: #165718;
     height: 29vh;
     display: flex;
     align-items: center; 
