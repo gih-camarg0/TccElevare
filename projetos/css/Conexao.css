@@ -177,6 +177,48 @@
     align-items: center; 
 }
 
+/*SECTION VALORES*/
+.valores{
+    background-color: #3f974180;
+    display: flex;
+    align-items: center;
+    color: white;
+    min-height: 87vh;
+}
+.row-circle{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    width:100%;
+    margin: auto 11%;
+}
+.circle{
+    width:clamp(160px, 18vw, 260px);
+    height:clamp(160px, 18vw, 260px);
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:clamp(18px, 2.1vw, 32px);
+    text-align:center;
+    padding:1rem;
+    line-height:1.1;
+    flex:0 0 auto;
+}
+.filled{
+    background:#165718;
+    box-shadow:0 0 0 20px rgba(0,0,0,0.02) inset;
+}
+.outline{
+    background:transparent;
+    border:6px solid #165718;
+}
+.circle span{
+    display:block;
+    transform:translateY(-2px);
+    color: white;
+}
+
 /*SECTION ENTRE CONTATO*/
 .contact{
     background-color: #F5F5F5;
