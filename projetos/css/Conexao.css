@@ -66,7 +66,7 @@
 /*SECTION INITIAL*/
 .initial{
     display: flex;
-    background-color: #409842;
+    background-color: #409841a6;
     justify-content: space-between;
     min-height: 87vh;
     color: white;
@@ -100,7 +100,7 @@
 
 }
 .conheca-link:hover{
-    color: #D183A9;
+    color: #165718;
     transition: 0.5s;
 }
 .left-initial{
@@ -109,7 +109,7 @@
 
 /*SECTION SOBRE*/
 .sobre{
-    background-color: #22873E;
+    background-color: #22873e33;
     justify-content: space-between;
     min-height: 87vh;
     color: black;
@@ -157,7 +157,7 @@
     font-size: 20px;
 }
 .color-1{
-    background-color: #409842;
+    background-color: #3f9741de;
     height: 29vh;
     display: flex;
     align-items: center; 
@@ -167,7 +167,7 @@
     height: 14.5vh;
 }
 .color-3{
-    background-color: #22873E;
+    background-color: #22873e33;
     height: 14.5vh;
 }
 .color-4{
