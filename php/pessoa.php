@@ -137,6 +137,7 @@
         padding: 20px 80px;
         gap: 40px;
         align-items: flex-start;
+        height: 68vh;
     }
 
     /************* LISTA DE VAGAS *************/
@@ -317,7 +318,7 @@
                 <a href="../index.html">Home</a>
                 <a href="pesfis.php">Vagas</a>
                 <a href="../sobre.html">Sobre nós</a>
-                <a href="../autenticacao/login.html"><i class="fa-solid fa-user"></i></a>
+                <a href="../login.html"><i class="fa-solid fa-user"></i></a>
             </div>
         </div>
     </header>
