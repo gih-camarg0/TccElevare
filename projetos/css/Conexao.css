@@ -18,7 +18,7 @@
     justify-content: space-between;
 }
 .header{
-    background-color: #409842;
+    background-color: #409841a6;
     padding: 2% 10% 0 10%; 
 }
 .navigation_header{
@@ -249,7 +249,7 @@
     width: 600px;
 }
 .btn-contact{
-    background-color: #71557A;
+    background-color: #409841a6;
     color: white;
     padding: 14px 28px;
     border-radius: 30px;
@@ -263,7 +263,7 @@
 #copyright{
     display: flex;
     justify-content: center;
-    background-color: #71557A;
+    background-color: #409841a6;
     font-size: 16px;
     padding: 25px;
     color: white;
