@@ -18,7 +18,7 @@
     justify-content: space-between;
 }
 .header{
-    background-color: #409841a6;
+    background-color: #383633a6;
     padding: 2% 10% 0 10%; 
 }
 .navigation_header{
@@ -66,7 +66,7 @@
 /*SECTION INITIAL*/
 .initial{
     display: flex;
-    background-color: #409841a6;
+    background-color: #383633a6;
     justify-content: space-between;
     min-height: 87vh;
     color: white;
@@ -89,7 +89,7 @@
     font-weight: bold;
 }
 #color{
-    color: #165718;
+    color: black;
     font-size: 80px;
     font-weight: bold;
 }
@@ -100,7 +100,7 @@
 
 }
 .conheca-link:hover{
-    color: #165718;
+    color: black;
     transition: 0.5s;
 }
 .left-initial{
@@ -109,12 +109,17 @@
 
 /*SECTION SOBRE*/
 .sobre{
-    background-color: #22873e33;
+    background-color: #38363333;
     justify-content: space-between;
     min-height: 87vh;
     color: black;
     display: flex;
     align-items: center;
+}
+#color{
+    color: white;
+    font-size: 80px;
+    font-weight: bold;
 }
 .right-sobre{
     flex: 1;
@@ -149,7 +154,6 @@
 /*SECTION PALETTE*/
 .palette{
     min-height: 87vh;
-    color: black;
 }
 .text-palette{
     color: #ffffffb3;
@@ -157,7 +161,7 @@
     font-size: 20px;
 }
 .color-1{
-    background-color: #3f9741de;
+    background-color: #383633a6;
     height: 29vh;
     display: flex;
     align-items: center; 
@@ -167,11 +171,11 @@
     height: 14.5vh;
 }
 .color-3{
-    background-color: #22873e33;
+    background-color: #38363333;
     height: 14.5vh;
 }
 .color-4{
-    background-color: #165718;
+    background-color: #393734;
     height: 29vh;
     display: flex;
     align-items: center; 
@@ -179,7 +183,7 @@
 
 /*SECTION VALORES*/
 .valores{
-    background-color: #3f974180;
+    background-color: #38363366;
     display: flex;
     align-items: center;
     color: white;
@@ -270,7 +274,7 @@
     width: 600px;
 }
 .btn-contact{
-    background-color: #409841a6;
+    background-color: #383633a6;
     color: white;
     padding: 14px 28px;
     border-radius: 30px;
@@ -284,7 +288,7 @@
 #copyright{
     display: flex;
     justify-content: center;
-    background-color: #409841a6;
+    background-color: #383633a6;
     font-size: 16px;
     padding: 25px;
     color: white;
