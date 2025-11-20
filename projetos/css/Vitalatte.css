@@ -171,6 +171,73 @@
     align-items: center; 
 }
 
+/*SECTION VALORES*/
+.valores{
+    background-color: #F5EFEB;
+    display: flex;
+    align-items: center;
+    color: white;
+    min-height: 87vh;
+}
+.row-circle{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    width:100%;
+    margin: auto 11%;
+}
+.circle{
+    width:clamp(160px, 18vw, 260px);
+    height:clamp(160px, 18vw, 260px);
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:clamp(18px, 2.1vw, 32px);
+    text-align:center;
+    padding:1rem;
+    line-height:1.1;
+    flex:0 0 auto;
+}
+.filled{
+    background:#567C8D;
+    box-shadow:0 0 0 20px rgba(0,0,0,0.02) inset;
+}
+.outline{
+    background:transparent;
+    border:6px solid #567C8D;
+}
+.circle span{
+    display:block;
+    transform:translateY(-2px);
+    color: white;
+}
+#outlline{
+    color: #567C8D;
+}
+
+/*SECTION MOCKUPS*/
+.mockups{
+    background-color: #22873e33;
+    justify-content: center;
+    color: black;
+    display: flex;
+    align-items: center;
+}
+.mockup-right{
+    flex: 1;
+}
+.mockup-sobre{
+    flex: 2;
+}
+.mockups .img-mockupR{
+    margin: 10px 0 10px 97.5px;
+}
+.mockups .img-mockupL{
+    margin: 10px 97.5px 10px 0;
+}
+
+
 /*SECTION ENTRE CONTATO*/
 .contact{
     background-color: #F5F5F5;
