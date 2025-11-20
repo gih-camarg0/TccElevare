@@ -219,6 +219,27 @@
     color: white;
 }
 
+/*SECTION MOCKUPS*/
+.mockups{
+    background-color: #22873e33;
+    justify-content: center;
+    color: black;
+    display: flex;
+    align-items: center;
+}
+.mockup-right{
+    flex: 1;
+}
+.mockup-sobre{
+    flex: 2;
+}
+.mockups .img-mockupR{
+    margin: 10px 0 10px 97.5px;
+}
+.mockups .img-mockupL{
+    margin: 10px 97.5px 10px 0;
+}
+
 /*SECTION ENTRE CONTATO*/
 .contact{
     background-color: #F5F5F5;
