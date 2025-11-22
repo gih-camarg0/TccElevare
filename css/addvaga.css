@@ -73,6 +73,35 @@ body{
     from {margin-left: -100vw;}
     to {margin-left: -10vw;}
 }
+#btnLeitor{
+    background-color: #0055cc;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 14px;
+    font-size: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+#btnLeitor:focus {
+    outline: 3px solid #ffcc00;
+    outline-offset: 3px;
+}
+#btnLeitor svg {
+    flex-shrink: 0;
+}
+@media (max-width: 600px) {
+    #btnLeitor {
+      bottom: 15px;
+      right: 15px;
+      padding: 8px 12px;
+      font-size: 14px;
+    }
+}
 
 /* CONTENT */
 #geral_container{
