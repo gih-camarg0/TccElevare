@@ -17,7 +17,7 @@
     justify-content: space-between;
 }
 .header{
-    background-color: #409841a6;
+    background-color: #FEF7C3;
     padding: 2% 10% 0 10%; 
 }
 .navigation_header{
@@ -26,18 +26,18 @@
 }
 .navigation_header a{
     text-decoration: none;
-    color: white;
+    color: black;
     transition: 1s;
     font-weight: bold;
     font-size: 25px;
 }
 .navigation_header a:hover{
-    color: #003d11;
+    color: #854F35;
 }
 .btn_icon_header{
     background: transparent;
     border: none;
-    color: white;
+    color: black;
     cursor: pointer;
     display: none;
 }
@@ -94,10 +94,10 @@
 /*SECTION INITIAL*/
 .initial{
     display: flex;
-    background-color: #409841a6;
+    background-color: #FEF7C3;
     justify-content: space-between;
     min-height: 87vh;
-    color: white;
+    color: #854F35;
     align-items: center;
 }
 .right-initial{
@@ -106,7 +106,7 @@
 }
 .type{
     font-size: 17px;
-    border: 1px solid white;
+    border: 1px solid #854F35;
     border-radius: 50px;
     padding: 2px 4px;
     width: 200px;
@@ -116,19 +116,14 @@
     font-size: 80px;
     font-weight: bold;
 }
-#color{
-    color: #165718;
-    font-size: 80px;
-    font-weight: bold;
-}
 .conheca-link{
     font-size: 17px;
     text-decoration: none;
-    color: white;
+    color: #854F35;
 
 }
 .conheca-link:hover{
-    color: #165718;
+    color: #FE0000;
     transition: 0.5s;
 }
 .left-initial{
@@ -141,7 +136,7 @@
 
 /*SECTION SOBRE*/
 .sobre{
-    background-color: #22873e33;
+    background-color: #F5EFEB;
     justify-content: space-between;
     min-height: 87vh;
     color: black;
@@ -184,26 +179,24 @@
     color: black;
 }
 .text-palette{
-    color: #ffffffb3;
+    color: black;
     margin: auto 11%;
     font-size: 20px;
 }
 .color-1{
-    background-color: #3f9741de;
+    background-color: #FEF7C3;
     height: 29vh;
     display: flex;
     align-items: center; 
 }
 .color-2{
-    background-color: #F5EFEB;
-    height: 14.5vh;
+    background-color: #FE0000;
+    height: 29vh;
+    display: flex;
+    align-items: center; 
 }
 .color-3{
-    background-color: #22873e33;
-    height: 14.5vh;
-}
-.color-4{
-    background-color: #165718;
+    background-color: #854F35;
     height: 29vh;
     display: flex;
     align-items: center; 
@@ -211,7 +204,7 @@
 
 /*SECTION VALORES*/
 .valores{
-    background-color: #3f974180;
+    background-color: #FEF7C3;
     display: flex;
     align-items: center;
     color: white;
@@ -238,22 +231,44 @@
     flex:0 0 auto;
 }
 .filled{
-    background:#165718;
+    background:#854F35;
     box-shadow:0 0 0 20px rgba(0,0,0,0.02) inset;
 }
 .outline{
     background:transparent;
-    border:6px solid #165718;
+    border:6px solid #FE0000;
 }
 .circle span{
     display:block;
     transform:translateY(-2px);
+    color: black;
+}
+
+/*SECTION LOGOTIPO*/
+.logotipo{
+    background-color: #854F35;
+    justify-content: space-between;
     color: white;
+    display: flex;
+    align-items: center;
+    min-height: 87vh;
+}
+.right-logotipo{
+    flex: 1;
+}
+#img-logotipo{
+    width: 500px;
+    object-fit: cover;
+    margin: auto 11%;
+}
+.left-logotipo{
+    flex: 1;
+    margin: auto 11%;
 }
 
 /*SECTION MOCKUPS*/
 .mockups{
-    background-color: #22873e33;
+    background-color: #854F35;
     justify-content: center;
     color: black;
     display: flex;
@@ -302,8 +317,8 @@
     width: 600px;
 }
 .btn-contact{
-    background-color: #409841a6;
-    color: white;
+    background-color: #FEF7C3;
+    color: #854F35;
     padding: 14px 28px;
     border-radius: 30px;
     text-decoration: none;
@@ -316,7 +331,7 @@
 #copyright{
     display: flex;
     justify-content: center;
-    background-color: #409841a6;
+    background-color: #854F35;
     font-size: 16px;
     padding: 25px;
     color: white;
