@@ -127,6 +127,10 @@
 .left-initial{
     flex: 1;
 }
+#img-initial{
+    width: 500px;
+    object-fit: cover;
+}
 
 /*SECTION SOBRE*/
 .sobre{
